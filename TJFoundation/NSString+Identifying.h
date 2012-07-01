@@ -10,4 +10,10 @@
 
 @interface NSString (Identifying)
 
+// Test Strings
+- (BOOL)isValidEmail;
+- (BOOL)isNotEmpty;
+- (BOOL)containsString:(NSString *)aString;
+- (BOOL)isUppercase;
+
 @end

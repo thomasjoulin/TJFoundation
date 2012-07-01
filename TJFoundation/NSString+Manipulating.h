@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Manipulation)
+@interface NSString (Manipulating)
+
+// Manipulate strings
+- (NSString *)substringFrom:(NSInteger)a to:(NSInteger)b;
+
+- (NSString *)trimmedString;
+- (NSString *)stringByTrimmingCharactersNotInSet:(NSCharacterSet *)set;
+
+- (NSString *)urlEncodedString;
 
 @end

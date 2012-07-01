@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 typedef struct
 {
     CGFloat red;
@@ -16,9 +14,8 @@ typedef struct
     CGFloat alpha;
 }       RGBA;
 
-@interface UIColor (Leijon)
+@interface UIColor (Additions)
 
-+ (UIColor *)darkGrayLeijonColor;
-+ (UIColor *)lightGrayLeijonColor;
++ (UIColor *)colorWithRGBA:(RGBA)color;
 
 @end

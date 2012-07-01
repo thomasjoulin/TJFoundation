@@ -10,4 +10,6 @@
 
 @interface NSString (Converting)
 
++ (NSString *)stringFromBool:(BOOL)boolean;
+
 @end

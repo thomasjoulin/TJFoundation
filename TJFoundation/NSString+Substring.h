@@ -10,4 +10,6 @@
 
 @interface NSString (Substring)
 
+- (NSInteger)indexOf:(NSString *)substring from:(NSInteger)starts;
+
 @end

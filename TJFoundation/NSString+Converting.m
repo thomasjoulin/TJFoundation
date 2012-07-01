@@ -10,4 +10,9 @@
 
 @implementation NSString (Converting)
 
++ (NSString *)stringFromBool:(BOOL)boolean
+{
+    return boolean == TRUE ? @"TRUE" : @"FALSE";
+}
+
 @end
