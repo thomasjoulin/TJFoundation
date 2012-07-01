@@ -8,6 +8,4 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TJFoundation : NSObject
-
-@end
+#import <TJFoundation.h/NSString+Extensions.h>
