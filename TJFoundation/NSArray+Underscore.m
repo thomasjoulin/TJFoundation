@@ -135,18 +135,18 @@
     for (id obj in self)
     {
         id comparee = context(obj);
-        
+
         if (!max)
         {
             max = comparee;
         }
-        
+
         if ([max compare:comparee] == NSOrderedAscending)
         {
             max = comparee;
         }
     }
-    
+
     return max;
 }
 

@@ -245,7 +245,7 @@ static NSArray *threeObjects;
 {
     NSArray *numbers = @[ @1, @4, @2, @120, @42 ];
     NSArray *lengths = @[ @"123", @"123456789", @"1", @"123456" ];
-    
+
     STAssertEqualObjects([numbers max], @120, nil);
     STAssertEqualObjects([[lengths pluck:@"length"] max], @9, nil);
 }

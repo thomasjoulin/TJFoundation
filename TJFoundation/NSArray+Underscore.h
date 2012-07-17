@@ -14,6 +14,15 @@ typedef BOOL (^ TJFindBlock)(id obj);
 
 @interface NSArray (Additions)
 
+/*
+    Methods of Underscore existing in Cocoa Touch:
+    ---
+ 
+    include     => contains:
+    invoke      => makeObjectsPerformSelector:withObject:
+    sortBy      => sortedArrayUsingComparator:
+ */
+
 - (NSArray *)each:(void (^)(id obj))context;
 - (NSArray *)map:(id (^)(id obj))context;
 - (id)reduceWithMemo:(id)memo andReduceBlock:(TJReduceBlock)context;
