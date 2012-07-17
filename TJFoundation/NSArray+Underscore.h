@@ -40,5 +40,6 @@ typedef BOOL (^ TJFindBlock)(id obj);
 - (NSArray *)zip:(NSArray *)firstArray, ... NS_REQUIRES_NIL_TERMINATION;
 - (NSDictionary *)groupBy:(NSString *)keyPath;
 - (NSDictionary *)groupUsingBlock:(id (^)(id obj))context;
+- (NSArray *)shuffle;
 
 @end

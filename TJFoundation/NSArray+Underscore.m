@@ -177,6 +177,19 @@
     return min;
 }
 
+- (NSArray *)shuffle
+{
+    NSMutableArray *result = [self mutableCopy];
+
+    for (NSInteger i = result.count - 1; i > 0; i--)
+    {
+        [result exchangeObjectAtIndex:arc4random() % (i + 1)
+                    withObjectAtIndex:i];
+    }
+
+    return result;
+}
+
 - (NSArray *)zip:(NSArray *)firstArray, ...
 {
     va_list args;
