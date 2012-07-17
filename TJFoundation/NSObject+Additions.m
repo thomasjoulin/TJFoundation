@@ -10,4 +10,9 @@
 
 @implementation NSObject (Additions)
 
+- (id)unless:(id)object
+{
+    return object ? object : self;
+}
+
 @end

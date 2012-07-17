@@ -6,8 +6,11 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
+typedef BOOL (^ TJTestBlock)(id obj);
+
 @interface NSObject (Blocks)
 
 - (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
++ (TJTestBlock)negateBlock:(TJTestBlock)context;
 
 @end

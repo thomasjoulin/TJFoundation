@@ -10,4 +10,6 @@
 
 @interface NSObject (Additions)
 
+- (id)unless:(id)object;
+
 @end

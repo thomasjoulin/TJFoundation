@@ -10,4 +10,6 @@
 
 @interface UIDevice (Additions)
 
+- (NSString *)macAddress;
+
 @end

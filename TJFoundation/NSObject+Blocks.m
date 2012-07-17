@@ -16,4 +16,11 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delta), dispatch_get_main_queue(), block);
 }
 
++ (TJTestBlock)negateBlock:(TJTestBlock)context
+{
+    return ^ BOOL (id obj) {
+        return !context(obj);
+    };
+}
+
 @end
