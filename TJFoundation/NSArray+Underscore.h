@@ -21,6 +21,7 @@ typedef BOOL (^ TJFindBlock)(id obj);
     include     => contains:
     invoke      => makeObjectsPerformSelector:withObject:
     sortBy      => sortedArrayUsingComparator:
+    sortedIndex => indexOfObject:inSortedRange:options:usingComparator:
  */
 
 - (NSArray *)each:(void (^)(id obj))context;
