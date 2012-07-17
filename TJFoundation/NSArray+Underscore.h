@@ -35,6 +35,8 @@ typedef BOOL (^ TJFindBlock)(id obj);
 - (NSArray *)pluck:(NSString *)propertyName;
 - (id)max;
 - (id)maxUsingBlock:(id (^)(id obj))context;
+- (id)min;
+- (id)minUsingBlock:(id (^)(id obj))context;
 - (NSArray *)zip:(NSArray *)firstArray, ... NS_REQUIRES_NIL_TERMINATION;
 
 @end

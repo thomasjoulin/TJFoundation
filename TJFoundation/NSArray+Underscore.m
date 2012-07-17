@@ -150,6 +150,33 @@
     return max;
 }
 
+- (id)min
+{
+    return [self minUsingBlock:^ id (id obj) { return obj; }];
+}
+
+- (id)minUsingBlock:(id (^)(id obj))context
+{
+    id min = nil;
+
+    for (id obj in self)
+    {
+        id comparee = context(obj);
+
+        if (!min)
+        {
+            min = comparee;
+        }
+
+        if ([min compare:comparee] == NSOrderedDescending)
+        {
+            min = comparee;
+        }
+    }
+
+    return min;
+}
+
 - (NSArray *)zip:(NSArray *)firstArray, ...
 {
     va_list args;

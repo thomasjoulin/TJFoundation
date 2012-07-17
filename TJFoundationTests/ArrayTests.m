@@ -250,6 +250,14 @@ static NSArray *threeObjects;
     STAssertEqualObjects([[lengths pluck:@"length"] max], @9, nil);
 }
 
+- (void)testMin
+{
+    NSArray *numbers = @[ @(-1), @4, @2, @120, @42 ];
+    NSArray *lengths = @[ @"123", @"123456789", @"1", @"123456" ];
+
+    STAssertEqualObjects([numbers min], @(-1), nil);
+    STAssertEqualObjects([[lengths pluck:@"length"] min], @1, nil);
+}
 - (void)testZip
 {
     NSArray *ret, *expected;
