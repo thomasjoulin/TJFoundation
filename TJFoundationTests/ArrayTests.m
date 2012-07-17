@@ -258,6 +258,23 @@ static NSArray *threeObjects;
     STAssertEqualObjects([numbers min], @(-1), nil);
     STAssertEqualObjects([[lengths pluck:@"length"] min], @1, nil);
 }
+
+- (void)testGroupBy
+{
+    NSArray *a;
+    NSDictionary *expected;
+
+    a = @[ @1.3f, @2.1f, @2.4f ];
+    expected = @{ @1 : @[ @1.3f ], @2: @[ @2.1f, @2.4f ] };
+
+    STAssertEqualObjects([a groupUsingBlock:^ id (NSNumber *num) { return @(floor([num floatValue])); }], expected, nil);
+
+    a = @[ @"one", @"two", @"three" ];
+    expected = @{ @3 : @[ @"one", @"two" ], @5 : @[ @"three" ] };
+
+    STAssertEqualObjects([a groupBy:@"length"], expected, nil);
+}
+
 - (void)testZip
 {
     NSArray *ret, *expected;

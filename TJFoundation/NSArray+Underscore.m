@@ -233,4 +233,33 @@
     return ret;
 }
 
+- (NSDictionary *)groupBy:(NSString *)keyPath
+{
+    return [self groupUsingBlock:^ id (id obj) {
+        return [obj valueForKeyPath:keyPath];
+    }];
+}
+
+- (NSDictionary *)groupUsingBlock:(id (^)(id obj))context
+{
+    NSMutableDictionary *ret = [NSMutableDictionary dictionary];
+
+    for (id obj in self)
+    {
+        id key = context(obj);
+
+        NSMutableArray *a = ret[key];
+
+        if (!a)
+        {
+            a = [NSMutableArray array];
+            ret[key] = a;
+        }
+
+        [a addObject:obj];
+    }
+    
+    return ret;
+}
+
 @end
