@@ -275,6 +275,11 @@ static NSArray *threeObjects;
     STAssertEqualObjects([a groupBy:@"length"], expected, nil);
 }
 
+- (void)testFirstObject
+{
+    STAssertEqualObjects([threeObjects firstObject], @"foo", nil);
+}
+
 - (void)testZip
 {
     NSArray *ret, *expected;
