@@ -29,3 +29,7 @@
 #import <TJFoundation/UIColor+ATColorExtension.h>
 
 #import <TJFoundation/UIDevice+Additions.h>
+#import <TJFoundation/UIView+Frame.h>
+
+
+#import <TJFoundation/UIView+Frame.h>
