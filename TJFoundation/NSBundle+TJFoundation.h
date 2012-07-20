@@ -10,4 +10,6 @@
 
 @interface NSBundle (TJFoundation)
 
++ (NSBundle *)TJFoundationBundle;
+
 @end
