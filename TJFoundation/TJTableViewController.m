@@ -7,115 +7,151 @@
 //
 
 #import "TJTableViewController.h"
+#import <objc/runtime.h>
 
 @interface TJTableViewController ()
+{
+    TJRefreshControl    *_tj_refreshControl;
+}
 
 @end
 
 @implementation TJTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self _addRefreshControlToView];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)setRefreshControl:(TJRefreshControl *)refreshControl
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (NSClassFromString(@"UIRefreshControl"))
+    {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincompatible-pointer-types"
+        [super setRefreshControl:refreshControl];
+#pragma clang diagnostic pop
+    }
+    else
+    {
+        [self _setupRefreshControl:refreshControl];
+    }
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (TJRefreshControl *)refreshControl
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    if (NSClassFromString(@"UIRefreshControl"))
+    {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincompatible-pointer-types"
+        return [super refreshControl];
+#pragma clang diagnostic pop
+    }
+
+    return _tj_refreshControl;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+#pragma mark -
+#pragma mark UIScrollView Delegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    [self _updateRefreshControlInScrollView:scrollView];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+    [self _updateRefreshControlInScrollView:scrollView];
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark -
+#pragma mark Refresh Control Private Methods
+
+- (void)_setupRefreshControl:(TJRefreshControl *)refreshControl
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    if (NSClassFromString(@"UIRefreshControl") == nil)
+    {
+        _tj_refreshControl = refreshControl;
+        _tj_refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull down to refresh..."];
+        [_tj_refreshControl addTarget:self action:@selector(_refreshControlEditingDidEnd) forControlEvents:UIControlEventEditingDidEnd];
+
+        if (self.isViewLoaded)
+        {
+            [self _addRefreshControlToView];
+        }
+    }
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)_addRefreshControlToView
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    if (NSClassFromString(@"UIRefreshControl") == nil)
+    {
+        if (_tj_refreshControl && ![_tj_refreshControl superview])
+        {
+            _tj_refreshControl.frame = CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height - self.tableView.contentInset.top, self.view.frame.size.width, self.tableView.bounds.size.height);
+            [self.tableView addSubview:_tj_refreshControl];
+        }
+    }
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+- (void)_refreshControlEditingDidEnd
 {
+    if (NSClassFromString(@"UIRefreshControl") == nil)
+    {
+        if (_tj_refreshControl.isRefreshing == NO)
+        {
+            [UIView animateWithDuration:.3 animations:^
+             {
+                 [self.tableView setContentInset:UIEdgeInsetsZero];
+             }];
+
+            _tj_refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull down to refresh..."];
+        }
+        else
+        {
+            [UIView animateWithDuration:.3 animations:^
+             {
+                 [self.tableView setContentInset:UIEdgeInsetsMake(60.f, 0.0f, 0.0f, 0.0f)];
+                 [self.tableView setContentOffset:CGPointMake(0, -(60.f))];
+             }];
+
+            _tj_refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Loading..."];
+        }
+    }
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)_updateRefreshControlInScrollView:(UIScrollView *)scrollView
 {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    if (NSClassFromString(@"UIRefreshControl") == nil)
+    {
+        if (_tj_refreshControl)
+        {
+            if (_tj_refreshControl.isRefreshing)
+            {
+                CGFloat offset = MAX(scrollView.contentOffset.y * -1, 0);
+                offset = MIN(offset, 60);
+                scrollView.contentInset = UIEdgeInsetsMake(offset, 0.0f, 0.0f, 0.0f);
+            }
+            else if (scrollView.isDragging)
+            {
+                if (_tj_refreshControl.isHighlighted && (scrollView.contentOffset.y) > -65.0f && (scrollView.contentOffset.y) < 0.0f && _tj_refreshControl.refreshing == NO)
+                {
+                    _tj_refreshControl.highlighted = NO;
+                }
+                else if (_tj_refreshControl.isHighlighted == NO && (scrollView.contentOffset.y) < -65.0f)
+                {
+                    _tj_refreshControl.highlighted = YES;
+                    _tj_refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Release to refresh..."];
+                }
+            }
+            else if ((scrollView.contentOffset.y) <= - 65.0f && _tj_refreshControl.refreshing == NO)
+            {
+                _tj_refreshControl.refreshing = YES;    
+            }
+        }
+    }
 }
 
 @end
