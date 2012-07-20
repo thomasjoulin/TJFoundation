@@ -9,11 +9,24 @@
 /* Begin PBXBuildFile section */
 		E904A8F415AD8047004505A1 /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E904A8F215AD8047004505A1 /* UIDevice+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E904A8F515AD8047004505A1 /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E904A8F315AD8047004505A1 /* UIDevice+Additions.m */; };
+		E908AC4915B95865003B0CE5 /* NSBundle+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E908AC4715B95865003B0CE5 /* NSBundle+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E908AC4A15B95865003B0CE5 /* NSBundle+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E908AC4815B95865003B0CE5 /* NSBundle+TJFoundation.m */; };
+		E908AC4E15B95943003B0CE5 /* UIImage+Bundle.h in Headers */ = {isa = PBXBuildFile; fileRef = E908AC4C15B95943003B0CE5 /* UIImage+Bundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E908AC4F15B95943003B0CE5 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E908AC4D15B95943003B0CE5 /* UIImage+Bundle.m */; };
+		E943E99A15B8A4E100690D17 /* TJViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E943E99815B8A4E100690D17 /* TJViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E943E99B15B8A4E100690D17 /* TJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E943E99915B8A4E100690D17 /* TJViewController.m */; };
+		E943E99E15B8A51100690D17 /* TJTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E943E99C15B8A51100690D17 /* TJTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E943E99F15B8A51100690D17 /* TJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E943E99D15B8A51100690D17 /* TJTableViewController.m */; };
+		E943E9F015B8A82000690D17 /* TJRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = E943E9EE15B8A82000690D17 /* TJRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E943E9F115B8A82000690D17 /* TJRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E943E9EF15B8A82000690D17 /* TJRefreshControl.m */; };
 		E9452F5A15B80642006655B1 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = E9452F5815B80642006655B1 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9452F5B15B80642006655B1 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E9452F5915B80642006655B1 /* UIView+Frame.m */; };
 		E945FFF515AC7EEF00A6E015 /* NSObject+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E945FFF315AC7EEF00A6E015 /* NSObject+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E945FFF615AC7EEF00A6E015 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E945FFF415AC7EEF00A6E015 /* NSObject+Additions.m */; };
 		E9D0D54415A19D06007F9309 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0D54315A19D06007F9309 /* ArrayTests.m */; };
+		E9E66EB915B953F7002D8B50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E66EB815B953F7002D8B50 /* CoreFoundation.framework */; };
+		E9E66EC815B954CF002D8B50 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E66EC615B954CF002D8B50 /* blueArrow.png */; };
+		E9E66EC915B954CF002D8B50 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E66EC715B954CF002D8B50 /* blueArrow@2x.png */; };
 		E9E7B6F515A0E9100043A242 /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7B6F115A0E9030043A242 /* StringTests.m */; };
 		E9E7B6FE15A0EAD80043A242 /* NSString+Manipulating.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E7B6FC15A0EAD80043A242 /* NSString+Manipulating.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9E7B6FF15A0EAD80043A242 /* NSString+Manipulating.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7B6FD15A0EAD80043A242 /* NSString+Manipulating.m */; };
@@ -67,12 +80,26 @@
 /* Begin PBXFileReference section */
 		E904A8F215AD8047004505A1 /* UIDevice+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Additions.h"; sourceTree = "<group>"; };
 		E904A8F315AD8047004505A1 /* UIDevice+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Additions.m"; sourceTree = "<group>"; };
+		E908AC4715B95865003B0CE5 /* NSBundle+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TJFoundation.h"; sourceTree = "<group>"; };
+		E908AC4815B95865003B0CE5 /* NSBundle+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TJFoundation.m"; sourceTree = "<group>"; };
+		E908AC4C15B95943003B0CE5 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
+		E908AC4D15B95943003B0CE5 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
+		E943E99815B8A4E100690D17 /* TJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJViewController.h; sourceTree = "<group>"; };
+		E943E99915B8A4E100690D17 /* TJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJViewController.m; sourceTree = "<group>"; };
+		E943E99C15B8A51100690D17 /* TJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJTableViewController.h; sourceTree = "<group>"; };
+		E943E99D15B8A51100690D17 /* TJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJTableViewController.m; sourceTree = "<group>"; };
+		E943E9EE15B8A82000690D17 /* TJRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJRefreshControl.h; sourceTree = "<group>"; };
+		E943E9EF15B8A82000690D17 /* TJRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJRefreshControl.m; sourceTree = "<group>"; };
 		E9452F5815B80642006655B1 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		E9452F5915B80642006655B1 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		E945FFF315AC7EEF00A6E015 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
 		E945FFF415AC7EEF00A6E015 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
 		E9D0D54215A19D06007F9309 /* ArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTests.h; sourceTree = "<group>"; };
 		E9D0D54315A19D06007F9309 /* ArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTests.m; sourceTree = "<group>"; };
+		E9E66EB715B953F7002D8B50 /* TJFoundationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJFoundationResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E66EB815B953F7002D8B50 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E9E66EC615B954CF002D8B50 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueArrow.png; path = Images/blueArrow.png; sourceTree = "<group>"; };
+		E9E66EC715B954CF002D8B50 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blueArrow@2x.png"; path = "Images/blueArrow@2x.png"; sourceTree = "<group>"; };
 		E9E7B6F015A0E9030043A242 /* StringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTests.h; sourceTree = "<group>"; };
 		E9E7B6F115A0E9030043A242 /* StringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
 		E9E7B6FC15A0EAD80043A242 /* NSString+Manipulating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Manipulating.h"; sourceTree = "<group>"; };
@@ -120,6 +147,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E9E66EB415B953F7002D8B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E66EB915B953F7002D8B50 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9FC364315A0E1B700F40D63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +187,44 @@
 			name = UIDevice;
 			sourceTree = "<group>";
 		};
+		E908AC4615B95850003B0CE5 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				E908AC4715B95865003B0CE5 /* NSBundle+TJFoundation.h */,
+				E908AC4815B95865003B0CE5 /* NSBundle+TJFoundation.m */,
+			);
+			name = NSBundle;
+			sourceTree = "<group>";
+		};
+		E908AC4B15B95935003B0CE5 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				E908AC4C15B95943003B0CE5 /* UIImage+Bundle.h */,
+				E908AC4D15B95943003B0CE5 /* UIImage+Bundle.m */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
+		E943E99615B8A4C700690D17 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				E943E99815B8A4E100690D17 /* TJViewController.h */,
+				E943E99915B8A4E100690D17 /* TJViewController.m */,
+				E943E99C15B8A51100690D17 /* TJTableViewController.h */,
+				E943E99D15B8A51100690D17 /* TJTableViewController.m */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		E943E9ED15B8A7F900690D17 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E943E9EE15B8A82000690D17 /* TJRefreshControl.h */,
+				E943E9EF15B8A82000690D17 /* TJRefreshControl.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		E9452F5D15B80648006655B1 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,17 +234,43 @@
 			name = UIView;
 			sourceTree = "<group>";
 		};
+		E97B402D15B9525B00ABB86A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E9E66EBA15B953F7002D8B50 /* TJFoundationResources */ = {
+			isa = PBXGroup;
+			children = (
+				E9E66EC515B954A0002D8B50 /* Images */,
+			);
+			path = TJFoundationResources;
+			sourceTree = "<group>";
+		};
+		E9E66EC515B954A0002D8B50 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E9E66EC615B954CF002D8B50 /* blueArrow.png */,
+				E9E66EC715B954CF002D8B50 /* blueArrow@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		E9E7B6FA15A0EA780043A242 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				E9E7B79015A0FAC30043A242 /* MKMapView */,
 				E9E7B78F15A0FAB30043A242 /* NSArray */,
+				E908AC4615B95850003B0CE5 /* NSBundle */,
 				E9E7B70C15A0F4E80043A242 /* NSData */,
 				E9E7B78E15A0FAAD0043A242 /* NSDictionary */,
 				E9E7B78D15A0FAA40043A242 /* NSObject */,
 				E9E7B6FB15A0EA800043A242 /* NSString */,
 				E9E7B73E15A0F7DD0043A242 /* UIColor */,
 				E904A8F015AD802A004505A1 /* UIDevice */,
+				E908AC4B15B95935003B0CE5 /* UIImage */,
 				E9452F5D15B80648006655B1 /* UIView */,
 			);
 			name = Categories;
@@ -275,6 +374,9 @@
 			children = (
 				E9FC364E15A0E1B700F40D63 /* TJFoundation.h */,
 				E9E7B6FA15A0EA780043A242 /* Categories */,
+				E943E9ED15B8A7F900690D17 /* Classes */,
+				E943E99615B8A4C700690D17 /* Subclasses */,
+				E97B402D15B9525B00ABB86A /* Resources */,
 				E9FA2A9815AF4F8B00ABE286 /* Others */,
 			);
 			name = Classes;
@@ -293,6 +395,7 @@
 				E9E7B78C15A0FA4C0043A242 /* TODO */,
 				E9FC364B15A0E1B700F40D63 /* TJFoundation */,
 				E9FC365F15A0E1B700F40D63 /* TJFoundationTests */,
+				E9E66EBA15B953F7002D8B50 /* TJFoundationResources */,
 				E9FC364815A0E1B700F40D63 /* Frameworks */,
 				E9FC364715A0E1B700F40D63 /* Products */,
 			);
@@ -303,6 +406,7 @@
 			children = (
 				E9FC364615A0E1B700F40D63 /* libTJFoundation.a */,
 				E9FC365615A0E1B700F40D63 /* TJFoundationTests.octest */,
+				E9E66EB715B953F7002D8B50 /* TJFoundationResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,6 +418,7 @@
 				E9E7B7C215A0FCFD0043A242 /* MapKit.framework */,
 				E9FC364915A0E1B700F40D63 /* Foundation.framework */,
 				E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */,
+				E9E66EB815B953F7002D8B50 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -378,12 +483,34 @@
 				E904A8F415AD8047004505A1 /* UIDevice+Additions.h in Headers */,
 				E9FA2A9A15AF4FAF00ABE286 /* NSObject+Subscripting.h in Headers */,
 				E9452F5A15B80642006655B1 /* UIView+Frame.h in Headers */,
+				E943E99A15B8A4E100690D17 /* TJViewController.h in Headers */,
+				E943E99E15B8A51100690D17 /* TJTableViewController.h in Headers */,
+				E943E9F015B8A82000690D17 /* TJRefreshControl.h in Headers */,
+				E908AC4915B95865003B0CE5 /* NSBundle+TJFoundation.h in Headers */,
+				E908AC4E15B95943003B0CE5 /* UIImage+Bundle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E9E66EB615B953F7002D8B50 /* TJFoundationResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E66EC315B953F7002D8B50 /* Build configuration list for PBXNativeTarget "TJFoundationResources" */;
+			buildPhases = (
+				E9E66EB315B953F7002D8B50 /* Sources */,
+				E9E66EB415B953F7002D8B50 /* Frameworks */,
+				E9E66EB515B953F7002D8B50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TJFoundationResources;
+			productName = TJFoundationResources;
+			productReference = E9E66EB715B953F7002D8B50 /* TJFoundationResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		E9FC364515A0E1B700F40D63 /* TJFoundation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9FC366A15A0E1B700F40D63 /* Build configuration list for PBXNativeTarget "TJFoundation" */;
@@ -442,11 +569,21 @@
 			targets = (
 				E9FC364515A0E1B700F40D63 /* TJFoundation */,
 				E9FC365515A0E1B700F40D63 /* TJFoundationTests */,
+				E9E66EB615B953F7002D8B50 /* TJFoundationResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E9E66EB515B953F7002D8B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E66EC815B954CF002D8B50 /* blueArrow.png in Resources */,
+				E9E66EC915B954CF002D8B50 /* blueArrow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9FC365315A0E1B700F40D63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +611,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E9E66EB315B953F7002D8B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9FC364215A0E1B700F40D63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,6 +638,11 @@
 				E945FFF615AC7EEF00A6E015 /* NSObject+Additions.m in Sources */,
 				E904A8F515AD8047004505A1 /* UIDevice+Additions.m in Sources */,
 				E9452F5B15B80642006655B1 /* UIView+Frame.m in Sources */,
+				E943E99B15B8A4E100690D17 /* TJViewController.m in Sources */,
+				E943E99F15B8A51100690D17 /* TJTableViewController.m in Sources */,
+				E943E9F115B8A82000690D17 /* TJRefreshControl.m in Sources */,
+				E908AC4A15B95865003B0CE5 /* NSBundle+TJFoundation.m in Sources */,
+				E908AC4F15B95943003B0CE5 /* UIImage+Bundle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +679,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E9E66EC115B953F7002D8B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TJFoundationResources/TJFoundationResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E9E66EC215B953F7002D8B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TJFoundationResources/TJFoundationResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		E9FC366815A0E1B700F40D63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -633,6 +816,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E9E66EC315B953F7002D8B50 /* Build configuration list for PBXNativeTarget "TJFoundationResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E66EC115B953F7002D8B50 /* Debug */,
+				E9E66EC215B953F7002D8B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E9FC364015A0E1B700F40D63 /* Build configuration list for PBXProject "TJFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
