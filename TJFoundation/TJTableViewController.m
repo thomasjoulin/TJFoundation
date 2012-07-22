@@ -29,10 +29,12 @@
 {
     if (NSClassFromString(@"UIRefreshControl"))
     {
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 60000
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wincompatible-pointer-types"
         [super setRefreshControl:refreshControl];
 #pragma clang diagnostic pop
+#endif
     }
     else
     {
@@ -44,10 +46,12 @@
 {
     if (NSClassFromString(@"UIRefreshControl"))
     {
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 60000
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wincompatible-pointer-types"
         return [super refreshControl];
 #pragma clang diagnostic pop
+#endif
     }
 
     return _tj_refreshControl;
