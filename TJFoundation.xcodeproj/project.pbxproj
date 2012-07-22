@@ -23,6 +23,8 @@
 		E9452F5B15B80642006655B1 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E9452F5915B80642006655B1 /* UIView+Frame.m */; };
 		E945FFF515AC7EEF00A6E015 /* NSObject+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E945FFF315AC7EEF00A6E015 /* NSObject+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E945FFF615AC7EEF00A6E015 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E945FFF415AC7EEF00A6E015 /* NSObject+Additions.m */; };
+		E96B05DF15BC13C000F67797 /* TJModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E96B05DD15BC13C000F67797 /* TJModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E96B05E015BC13C000F67797 /* TJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B05DE15BC13C000F67797 /* TJModel.m */; };
 		E9D0D54415A19D06007F9309 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0D54315A19D06007F9309 /* ArrayTests.m */; };
 		E9E66EB915B953F7002D8B50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E66EB815B953F7002D8B50 /* CoreFoundation.framework */; };
 		E9E66EC815B954CF002D8B50 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E66EC615B954CF002D8B50 /* blueArrow.png */; };
@@ -94,6 +96,8 @@
 		E9452F5915B80642006655B1 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		E945FFF315AC7EEF00A6E015 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
 		E945FFF415AC7EEF00A6E015 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
+		E96B05DD15BC13C000F67797 /* TJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJModel.h; sourceTree = "<group>"; };
+		E96B05DE15BC13C000F67797 /* TJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJModel.m; sourceTree = "<group>"; };
 		E9D0D54215A19D06007F9309 /* ArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTests.h; sourceTree = "<group>"; };
 		E9D0D54315A19D06007F9309 /* ArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTests.m; sourceTree = "<group>"; };
 		E9E66EB715B953F7002D8B50 /* TJFoundationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJFoundationResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +223,10 @@
 		E943E9ED15B8A7F900690D17 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E96B05DC15BC13A100F67797 /* Network */,
+				E96B05DB15BC139F00F67797 /* Models */,
+				E96B05D815BC139500F67797 /* Views */,
+				E96B05DA15BC139800F67797 /* ViewControllers */,
 				E943E9EE15B8A82000690D17 /* TJRefreshControl.h */,
 				E943E9EF15B8A82000690D17 /* TJRefreshControl.m */,
 			);
@@ -232,6 +240,44 @@
 				E9452F5915B80642006655B1 /* UIView+Frame.m */,
 			);
 			name = UIView;
+			sourceTree = "<group>";
+		};
+		E96B05D815BC139500F67797 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E96B05DA15BC139800F67797 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E96B05DB15BC139F00F67797 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E96B05DD15BC13C000F67797 /* TJModel.h */,
+				E96B05DE15BC13C000F67797 /* TJModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E96B05DC15BC13A100F67797 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		E96B05E115BC149400F67797 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				E96B05E315BC14B400F67797 /* AFNetworking */,
+			);
+			name = Vendors;
 			sourceTree = "<group>";
 		};
 		E97B402D15B9525B00ABB86A /* Resources */ = {
@@ -488,6 +534,7 @@
 				E943E9F015B8A82000690D17 /* TJRefreshControl.h in Headers */,
 				E908AC4915B95865003B0CE5 /* NSBundle+TJFoundation.h in Headers */,
 				E908AC4E15B95943003B0CE5 /* UIImage+Bundle.h in Headers */,
+				E96B05DF15BC13C000F67797 /* TJModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +690,7 @@
 				E943E9F115B8A82000690D17 /* TJRefreshControl.m in Sources */,
 				E908AC4A15B95865003B0CE5 /* NSBundle+TJFoundation.m in Sources */,
 				E908AC4F15B95943003B0CE5 /* UIImage+Bundle.m in Sources */,
+				E96B05E015BC13C000F67797 /* TJModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
