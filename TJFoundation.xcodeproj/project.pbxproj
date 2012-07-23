@@ -46,6 +46,13 @@
 		E96B060B15BC14B400F67797 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B05F615BC14B400F67797 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E96B060C15BC14B400F67797 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E96B05F715BC14B400F67797 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E96B060D15BC14B400F67797 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B05F815BC14B400F67797 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E987A64715BD9C3600985E83 /* TBXML+NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E987A65215BD9CA400985E83 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A64C15BD9CA400985E83 /* TBXML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E987A65315BD9CA400985E83 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A64D15BD9CA400985E83 /* TBXML+Compression.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E987A65415BD9CA400985E83 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A64E15BD9CA400985E83 /* TBXML+HTTP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E987A65515BD9CA400985E83 /* TBXML.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A64F15BD9CA400985E83 /* TBXML.h */; };
+		E987A65615BD9CA400985E83 /* TBXML+Compression.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A65015BD9CA400985E83 /* TBXML+Compression.h */; };
+		E987A65715BD9CA400985E83 /* TBXML+HTTP.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A65115BD9CA400985E83 /* TBXML+HTTP.h */; };
 		E9D0D54415A19D06007F9309 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0D54315A19D06007F9309 /* ArrayTests.m */; };
 		E9E66EB915B953F7002D8B50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E66EB815B953F7002D8B50 /* CoreFoundation.framework */; };
 		E9E66EC815B954CF002D8B50 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E66EC615B954CF002D8B50 /* blueArrow.png */; };
@@ -140,6 +147,13 @@
 		E96B05F615BC14B400F67797 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		E96B05F715BC14B400F67797 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		E96B05F815BC14B400F67797 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+NSDictionary.m"; sourceTree = "<group>"; };
+		E987A64C15BD9CA400985E83 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBXML.m; path = "Vendors/TBXML/TBXML-Code/TBXML.m"; sourceTree = SOURCE_ROOT; };
+		E987A64D15BD9CA400985E83 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+Compression.m"; path = "Vendors/TBXML/TBXML-Code/TBXML+Compression.m"; sourceTree = SOURCE_ROOT; };
+		E987A64E15BD9CA400985E83 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+HTTP.m"; path = "Vendors/TBXML/TBXML-Code/TBXML+HTTP.m"; sourceTree = SOURCE_ROOT; };
+		E987A64F15BD9CA400985E83 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBXML.h; path = "Vendors/TBXML/TBXML-Headers/TBXML.h"; sourceTree = SOURCE_ROOT; };
+		E987A65015BD9CA400985E83 /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TBXML+Compression.h"; path = "Vendors/TBXML/TBXML-Headers/TBXML+Compression.h"; sourceTree = SOURCE_ROOT; };
+		E987A65115BD9CA400985E83 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TBXML+HTTP.h"; path = "Vendors/TBXML/TBXML-Headers/TBXML+HTTP.h"; sourceTree = SOURCE_ROOT; };
 		E9D0D54215A19D06007F9309 /* ArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTests.h; sourceTree = "<group>"; };
 		E9D0D54315A19D06007F9309 /* ArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTests.m; sourceTree = "<group>"; };
 		E9E66EB715B953F7002D8B50 /* TJFoundationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJFoundationResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,6 +331,7 @@
 		E96B05E115BC149400F67797 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				E987A64B15BD9C9B00985E83 /* TBXML */,
 				E96B05E315BC14B400F67797 /* AFNetworking */,
 			);
 			name = Vendors;
@@ -356,6 +371,19 @@
 			children = (
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		E987A64B15BD9C9B00985E83 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				E987A64C15BD9CA400985E83 /* TBXML.m */,
+				E987A64D15BD9CA400985E83 /* TBXML+Compression.m */,
+				E987A64E15BD9CA400985E83 /* TBXML+HTTP.m */,
+				E987A64F15BD9CA400985E83 /* TBXML.h */,
+				E987A65015BD9CA400985E83 /* TBXML+Compression.h */,
+				E987A65115BD9CA400985E83 /* TBXML+HTTP.h */,
+			);
+			name = TBXML;
 			sourceTree = "<group>";
 		};
 		E9E66EBA15B953F7002D8B50 /* TJFoundationResources */ = {
@@ -455,6 +483,7 @@
 				E9E7B77A15A0F9FF0043A242 /* NSObject+Blocks.h */,
 				E9E7B77915A0F9FF0043A242 /* NSObject+Blocks.m */,
 				E9FA2A9915AF4FAF00ABE286 /* NSObject+Subscripting.h */,
+				E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */,
 			);
 			name = NSObject;
 			sourceTree = "<group>";
@@ -618,6 +647,9 @@
 				E96B060815BC14B400F67797 /* AFURLConnectionOperation.h in Headers */,
 				E96B060A15BC14B400F67797 /* AFXMLRequestOperation.h in Headers */,
 				E96B060C15BC14B400F67797 /* UIImageView+AFNetworking.h in Headers */,
+				E987A65515BD9CA400985E83 /* TBXML.h in Headers */,
+				E987A65615BD9CA400985E83 /* TBXML+Compression.h in Headers */,
+				E987A65715BD9CA400985E83 /* TBXML+HTTP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +816,10 @@
 				E96B060915BC14B400F67797 /* AFURLConnectionOperation.m in Sources */,
 				E96B060B15BC14B400F67797 /* AFXMLRequestOperation.m in Sources */,
 				E96B060D15BC14B400F67797 /* UIImageView+AFNetworking.m in Sources */,
+				E987A64715BD9C3600985E83 /* TBXML+NSDictionary.m in Sources */,
+				E987A65215BD9CA400985E83 /* TBXML.m in Sources */,
+				E987A65315BD9CA400985E83 /* TBXML+Compression.m in Sources */,
+				E987A65415BD9CA400985E83 /* TBXML+HTTP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

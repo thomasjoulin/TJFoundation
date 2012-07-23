@@ -1,3 +1,6 @@
 [submodule "Vendors/AFNetworking"]
 	path = Vendors/AFNetworking
 	url = git://github.com/AFNetworking/AFNetworking.git
+[submodule "Vendors/TBXML"]
+	path = Vendors/TBXML
+	url = git://github.com/71squared/TBXML.git
