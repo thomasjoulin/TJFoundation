@@ -6,6 +6,8 @@
 // Copyright (c) 2011 Amanuel Tewolde
 //
 
+#import <UIKit/UIKit.h>
+
 @interface UIColor (ATColorExtension)
 
 + (UIColor *)colorWithHexString:(NSString *)hexString withHexAlpha:(NSString*)hexAlpha;
