@@ -47,6 +47,8 @@
 		E96B060C15BC14B400F67797 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E96B05F715BC14B400F67797 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E96B060D15BC14B400F67797 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B05F815BC14B400F67797 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E987A64715BD9C3600985E83 /* TBXML+NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */; };
+		E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E987A65215BD9CA400985E83 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A64C15BD9CA400985E83 /* TBXML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E987A65315BD9CA400985E83 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A64D15BD9CA400985E83 /* TBXML+Compression.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E987A65415BD9CA400985E83 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A64E15BD9CA400985E83 /* TBXML+HTTP.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -148,6 +150,8 @@
 		E96B05F715BC14B400F67797 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		E96B05F815BC14B400F67797 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+NSDictionary.m"; sourceTree = "<group>"; };
+		E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
+		E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Additions.h"; sourceTree = "<group>"; };
 		E987A64C15BD9CA400985E83 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBXML.m; path = "Vendors/TBXML/TBXML-Code/TBXML.m"; sourceTree = SOURCE_ROOT; };
 		E987A64D15BD9CA400985E83 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+Compression.m"; path = "Vendors/TBXML/TBXML-Code/TBXML+Compression.m"; sourceTree = SOURCE_ROOT; };
 		E987A64E15BD9CA400985E83 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TBXML+HTTP.m"; path = "Vendors/TBXML/TBXML-Code/TBXML+HTTP.m"; sourceTree = SOURCE_ROOT; };
@@ -484,6 +488,8 @@
 				E9E7B77915A0F9FF0043A242 /* NSObject+Blocks.m */,
 				E9FA2A9915AF4FAF00ABE286 /* NSObject+Subscripting.h */,
 				E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */,
+				E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */,
+				E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */,
 			);
 			name = NSObject;
 			sourceTree = "<group>";
@@ -817,6 +823,7 @@
 				E96B060B15BC14B400F67797 /* AFXMLRequestOperation.m in Sources */,
 				E96B060D15BC14B400F67797 /* UIImageView+AFNetworking.m in Sources */,
 				E987A64715BD9C3600985E83 /* TBXML+NSDictionary.m in Sources */,
+				E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */,
 				E987A65215BD9CA400985E83 /* TBXML.m in Sources */,
 				E987A65315BD9CA400985E83 /* TBXML+Compression.m in Sources */,
 				E987A65415BD9CA400985E83 /* TBXML+HTTP.m in Sources */,
