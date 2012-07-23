@@ -13,6 +13,10 @@
 
 @property (nonatomic, strong) NSURL     *url;
 
-- (id)initWithDictionary:(NSDictionary *)dictionary;
+- (void)fillWithDictionary:(NSDictionary *)dictionary;
+
+- (TJModel *)modelMappingObjectForNode:(NSString *)nodeName;
+- (NSDictionary *)nodeAliases;
+- (NSString *)rootNodeName;
 
 @end

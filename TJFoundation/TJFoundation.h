@@ -41,6 +41,8 @@
 #pragma mark -
 #pragma Categories
 
+#import <TJFoundation/TJModel.h>
 #import <TJFoundation/TJRefreshControl.h>
+#import <TJFoundation/TJDataSource.h>
 #import <TJFoundation/TJTableViewController.h>
 #import <TJFoundation/TJViewController.h>

@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "TJRefreshControl.h"
+#import "TJDataSource.h"
+#import "TJModel.h"
 
-@interface TJTableViewController : UITableViewController
+@interface TJTableViewController : UITableViewController <TJDataSourceDelegate>
 
 @property (nonatomic, strong) TJRefreshControl  *refreshControl;
 

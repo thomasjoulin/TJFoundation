@@ -4,4 +4,7 @@
    <FileRef
       location = "group:TJFoundation.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TJFoundationDemo/TJFoundationDemo.xcodeproj">
+   </FileRef>
 </Workspace>

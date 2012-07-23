@@ -46,6 +46,12 @@
 		E96B060B15BC14B400F67797 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B05F615BC14B400F67797 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E96B060C15BC14B400F67797 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E96B05F715BC14B400F67797 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E96B060D15BC14B400F67797 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B05F815BC14B400F67797 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E987A63E15BD9C3600985E83 /* TJDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63115BD9C3600985E83 /* TJDataSource.m */; };
+		E987A64215BD9C3600985E83 /* TJDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63515BD9C3600985E83 /* TJDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E987A64315BD9C3600985E83 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63615BD9C3600985E83 /* NSObject+Properties.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E987A64415BD9C3600985E83 /* NSObject+Properties.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63715BD9C3600985E83 /* NSObject+Properties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E987A64515BD9C3600985E83 /* NSString+PropertyKVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E987A64615BD9C3600985E83 /* NSString+PropertyKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63915BD9C3600985E83 /* NSString+PropertyKVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E987A64715BD9C3600985E83 /* TBXML+NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */; };
 		E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -149,6 +155,12 @@
 		E96B05F615BC14B400F67797 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		E96B05F715BC14B400F67797 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		E96B05F815BC14B400F67797 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		E987A63115BD9C3600985E83 /* TJDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJDataSource.m; sourceTree = "<group>"; };
+		E987A63515BD9C3600985E83 /* TJDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJDataSource.h; sourceTree = "<group>"; };
+		E987A63615BD9C3600985E83 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
+		E987A63715BD9C3600985E83 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Properties.h"; sourceTree = "<group>"; };
+		E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PropertyKVC.h"; sourceTree = "<group>"; };
+		E987A63915BD9C3600985E83 /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyKVC.m"; sourceTree = "<group>"; };
 		E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+NSDictionary.m"; sourceTree = "<group>"; };
 		E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
 		E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Additions.h"; sourceTree = "<group>"; };
@@ -486,8 +498,14 @@
 				E945FFF415AC7EEF00A6E015 /* NSObject+Additions.m */,
 				E9E7B77A15A0F9FF0043A242 /* NSObject+Blocks.h */,
 				E9E7B77915A0F9FF0043A242 /* NSObject+Blocks.m */,
+				E987A63715BD9C3600985E83 /* NSObject+Properties.h */,
+				E987A63615BD9C3600985E83 /* NSObject+Properties.m */,
 				E9FA2A9915AF4FAF00ABE286 /* NSObject+Subscripting.h */,
+				E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */,
+				E987A63915BD9C3600985E83 /* NSString+PropertyKVC.m */,
 				E987A63A15BD9C3600985E83 /* TBXML+NSDictionary.m */,
+				E987A63515BD9C3600985E83 /* TJDataSource.h */,
+				E987A63115BD9C3600985E83 /* TJDataSource.m */,
 				E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */,
 				E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */,
 			);
@@ -653,6 +671,10 @@
 				E96B060815BC14B400F67797 /* AFURLConnectionOperation.h in Headers */,
 				E96B060A15BC14B400F67797 /* AFXMLRequestOperation.h in Headers */,
 				E96B060C15BC14B400F67797 /* UIImageView+AFNetworking.h in Headers */,
+				E987A64215BD9C3600985E83 /* TJDataSource.h in Headers */,
+				E987A64415BD9C3600985E83 /* NSObject+Properties.h in Headers */,
+				E987A64515BD9C3600985E83 /* NSString+PropertyKVC.h in Headers */,
+				E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */,
 				E987A65515BD9CA400985E83 /* TBXML.h in Headers */,
 				E987A65615BD9CA400985E83 /* TBXML+Compression.h in Headers */,
 				E987A65715BD9CA400985E83 /* TBXML+HTTP.h in Headers */,
@@ -822,6 +844,9 @@
 				E96B060915BC14B400F67797 /* AFURLConnectionOperation.m in Sources */,
 				E96B060B15BC14B400F67797 /* AFXMLRequestOperation.m in Sources */,
 				E96B060D15BC14B400F67797 /* UIImageView+AFNetworking.m in Sources */,
+				E987A63E15BD9C3600985E83 /* TJDataSource.m in Sources */,
+				E987A64315BD9C3600985E83 /* NSObject+Properties.m in Sources */,
+				E987A64615BD9C3600985E83 /* NSString+PropertyKVC.m in Sources */,
 				E987A64715BD9C3600985E83 /* TBXML+NSDictionary.m in Sources */,
 				E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */,
 				E987A65215BD9CA400985E83 /* TBXML.m in Sources */,
