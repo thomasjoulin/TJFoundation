@@ -40,6 +40,13 @@ Create a `TJTableViewController` subclass (which is a `UITableViewController` su
 
 `TJRefreshControl` maps the public header of `UIRefreshControl`, present in iOS6. It's a `UIControl` subclass, so you can add yourself as a target for `UIControlEventValueChanged` events. Use `TJRefreshControl` as a direct replacement of `UIRefreshControl`. It will use the native control on iOS6, a custom one in early versions.
 
+## Network oriented ORM
+
+`TJDataSource` lets you define a URL that will fill your models. Based on some specific naming conventions,
+you just need to define `TJModel` subclasses to make it work.
+
+Take a look at `TJFoundationDemo` for examples.
+
 ## Categories
 
 ### NSString
