@@ -22,7 +22,27 @@ TJFoundation aims to extend Core Foundation by providing base classes and extend
 
 See the headers for full listing. The content (classes, methods and documentation) will improve over time. Please make pull request if you have any useful methods to add or a fix.
 
-## NSString
+## Pull to Refresh
+
+Create a `TJTableViewController` subclass (which is a `UITableViewController` subclass, so you can use it exactly like it). In your `init` method, you need to set the `refreshControl` property :
+
+    - (id)init
+    {
+        if ((self = [super init]))
+        {        
+            self.refreshControl = [[TJRefreshControl alloc] init];
+        
+            [self.refreshControl addTarget:self action:@selector(didRefresh) forControlEvents:UIControlEventValueChanged];
+        }
+    
+        return self;
+    }
+
+`TJRefreshControl` maps the public header of `UIRefreshControl`, present in iOS6. It's a `UIControl` subclass, so you can add yourself as a target for `UIControlEventValueChanged` events. Use `TJRefreshControl` as a direct replacement of `UIRefreshControl`. It will use the native control on iOS6, a custom one in early versions.
+
+## Categories
+
+### NSString
 
 	- (BOOL)isValidEmail;
 
@@ -41,7 +61,7 @@ Converts a BOOL to a readable NSString.
 	NSLog(@"%@ is valid ? %@", invalid, [NSString stringFromBool:[invalid isValidEmail]]);
 	// email.com is valid ? FALSE
 
-## NSDate
+### NSDate
 
 	- (NSString *)stringWithFormat:(NSString *)format;
 	
