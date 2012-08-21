@@ -4,17 +4,19 @@ TJFoundation aims to extend Core Foundation by providing base classes and extend
 
 **TJFoundation is a work in progress, and has not been thoroughly tested. Use at you own risks.**
 
-1. <a href="https://github.com/thomasjoulin/TJFoundation/downloads">Download the latest version of `TJFoundation.framework`</a> or check this directory out to build from source (see below).
-2. Drag and drop `TJFoundation.framework` into you project (I suggest in the `Frameworks` group). Make sure to copy it.
-3. Add `<Path To TJFoundation.framework>/Headers` in the `Header Search Paths` of your target `Build Settings`.
-4. Add `#import <TJFoundation.h>` wherever you need it. I suggest to make it global by adding it to your `Prefix.pch`.
-
-## Build from sources
-
-1. Checkout this directory an open `TJFramework.xcodeproj`
-2. Select the `TJFoundation Universal Framework` scheme
-3. Build
-4. A Finder window should open with the framework. Otherwise, it's in the Products directory
+1. You can <a href="https://github.com/thomasjoulin/TJFoundation/downloads">download the ready-made framework</a> or build from source. If you don't want to build from source, skip the following steps and go directly to step 2.
+1.1 Checkout this directory an open `TJFramework.xcodeproj`
+1.2 Select the `MakeFramework` scheme
+1.3 Build
+1.4 A Finder window should open with the framework. Otherwise, it's in the Products directory
+2. Drag and drop `TJFoundation.framework` into you project (I suggest in the `Frameworks` group).
+3. Drag and drop `TJFoundationResources.bundle` into your project (I suggest in the `Resources` folder)
+4. Add `#import <TJFoundation/TJFoundation.h>` wherever you need it. I suggest to make it global by adding it to your `Prefix.pch`.
+5. In your project Build Settings, Other Linker Flags, add `-ObjC`.
+6. In your project Build Phases, Link Binary With Libraries, Add :
+- libz.dlyb
+- MapKit.framework
+- QuartzCore.framework
 
 # Example
 
@@ -50,14 +52,3 @@ Returns the string value of an NSDate with the specific format. Example :
 	
 	NSLog(@"%@", formatted_date);
 	// 09/01/12
-
-# TODO
-
-1. `Example.xcodeproj` using the framework
-2. Improve documentation (and screenshots detailing installation)
-3. Add unit tests
-4. Improve framework
-5. ...
-6. Profit !
-
-That's it for now !
