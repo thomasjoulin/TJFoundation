@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E932BED9160980B600A8AEC6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E932BED8160980B600A8AEC6 /* Default-568h@2x.png */; };
 		E97C59E615BC873E00EA8786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C59E515BC873E00EA8786 /* UIKit.framework */; };
 		E97C59E815BC873E00EA8786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C59E715BC873E00EA8786 /* Foundation.framework */; };
 		E97C59EA15BC873E00EA8786 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C59E915BC873E00EA8786 /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 		E9C4CD6615BD8AA60031D029 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C4CD6515BD8AA60031D029 /* Photo.m */; };
 		E9C4CD6915BD8FF40031D029 /* Annonces.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C4CD6815BD8FF30031D029 /* Annonces.m */; };
 		E9C4CD6C15BD91A50031D029 /* Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C4CD6B15BD91A50031D029 /* Photos.m */; };
+		E9C6D26016099333000B9DB6 /* TJFoundationResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9C6D25F16099333000B9DB6 /* TJFoundationResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E932BED8160980B600A8AEC6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E97C59E115BC873E00EA8786 /* TJFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TJFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97C59E515BC873E00EA8786 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E97C59E715BC873E00EA8786 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,7 @@
 		E9C4CD6815BD8FF30031D029 /* Annonces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annonces.m; sourceTree = "<group>"; };
 		E9C4CD6A15BD91A40031D029 /* Photos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photos.h; sourceTree = "<group>"; };
 		E9C4CD6B15BD91A50031D029 /* Photos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photos.m; sourceTree = "<group>"; };
+		E9C6D25F16099333000B9DB6 /* TJFoundationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; name = TJFoundationResources.bundle; path = "/Users/thomas/Library/Developer/Xcode/DerivedData/TJFoundation-aajkaqbobqdgwrftolhacyhlicyw/Build/Products/Debug-iphoneos/TJFoundationResources.bundle"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		E97C59D615BC873E00EA8786 = {
 			isa = PBXGroup;
 			children = (
+				E9C6D25F16099333000B9DB6 /* TJFoundationResources.bundle */,
 				E97C59EB15BC873E00EA8786 /* TJFoundationDemo */,
 				E97C5A0915BC873E00EA8786 /* TJFoundationDemoTests */,
 				E97C59E415BC873E00EA8786 /* Frameworks */,
@@ -173,6 +178,7 @@
 		E97C59EC15BC873E00EA8786 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E932BED8160980B600A8AEC6 /* Default-568h@2x.png */,
 				E97C59ED15BC873E00EA8786 /* TJFoundationDemo-Info.plist */,
 				E97C59EE15BC873E00EA8786 /* InfoPlist.strings */,
 				E97C59F115BC873E00EA8786 /* main.m */,
@@ -356,7 +362,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C6D26016099333000B9DB6 /* TJFoundationResources.bundle in Resources */,
 				E97C59F015BC873E00EA8786 /* InfoPlist.strings in Resources */,
+				E932BED9160980B600A8AEC6 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +506,8 @@
 		E97C5A1515BC873E00EA8786 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Joulin (39B63TFFBM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thomas Joulin (39B63TFFBM)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TJFoundationDemo/TJFoundationDemo-Prefix.pch";
 				INFOPLIST_FILE = "TJFoundationDemo/TJFoundationDemo-Info.plist";
@@ -510,6 +520,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "306CC147-F6CE-4BD3-B9EE-6A7D859A24A7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "306CC147-F6CE-4BD3-B9EE-6A7D859A24A7";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
 			};

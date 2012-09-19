@@ -16,7 +16,12 @@
     static NSBundle *myLibraryResourcesBundle = nil;
 
     dispatch_once(&onceToken, ^{
-        myLibraryResourcesBundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"TJFoundationResources" withExtension:@"bundle"]];
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"TJFoundationResources" withExtension:@"bundle"];
+        
+        if (url)
+        {
+            myLibraryResourcesBundle = [NSBundle bundleWithURL:url];
+        }
     });
 
     return myLibraryResourcesBundle;
