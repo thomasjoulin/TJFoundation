@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   }
 
   s.author       = { "Thomas Joulin" => "toutankharton@gmail.com" }
-  s.source       = { :git => "https://github.com/thomasjoulin/TJFoundation.git", :commit => "641bcbf4100615748136bd95807d0c48418b6ec8" }
+  s.source       = { :git => "https://github.com/thomasjoulin/TJFoundation.git", :tag => "v0.0.1" }
   s.platform     = :ios
   s.source_files = 'TJFoundation', 'TJFoundation/**/*.{h,m}'
   s.frameworks 	 = 'MapKit', 'QuartzCore'
