@@ -43,6 +43,8 @@
 		E987A64515BD9C3600985E83 /* NSString+PropertyKVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */; };
 		E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9B7E2D0160AF2A00053E55C /* MKMapView+Regions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */; };
 		E9D0D54415A19D06007F9309 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0D54315A19D06007F9309 /* ArrayTests.m */; };
 		E9E66EB915B953F7002D8B50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E66EB815B953F7002D8B50 /* CoreFoundation.framework */; };
 		E9E7B6F515A0E9100043A242 /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7B6F115A0E9030043A242 /* StringTests.m */; };
@@ -113,6 +115,8 @@
 		E987A63915BD9C3600985E83 /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyKVC.m"; sourceTree = "<group>"; };
 		E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
 		E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Additions.h"; sourceTree = "<group>"; };
+		E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Regions.h"; sourceTree = "<group>"; };
+		E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Regions.m"; sourceTree = "<group>"; };
 		E9D0D54215A19D06007F9309 /* ArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTests.h; sourceTree = "<group>"; };
 		E9D0D54315A19D06007F9309 /* ArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTests.m; sourceTree = "<group>"; };
 		E9E66EB715B953F7002D8B50 /* TJFoundationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJFoundationResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -357,6 +361,8 @@
 			children = (
 				E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */,
 				E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */,
+				E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */,
+				E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */,
 			);
 			name = MKMapView;
 			sourceTree = "<group>";
@@ -475,6 +481,7 @@
 				E987A64515BD9C3600985E83 /* NSString+PropertyKVC.h in Headers */,
 				E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */,
 				E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */,
+				E9B7E2D0160AF2A00053E55C /* MKMapView+Regions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +662,7 @@
 				E908AC4F15B95943003B0CE5 /* UIImage+Bundle.m in Sources */,
 				E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */,
 				E943349E160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m in Sources */,
+				E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 #import <TJFoundation/NSObject+Additions.h>
 
 #import <TJFoundation/MKMapView+ZoomLevel.h>
+#import <TJFoundation/MKMapView+Regions.h>
 
 #import <TJFoundation/NSArray+Underscore.h>
 
