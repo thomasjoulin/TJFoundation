@@ -13,13 +13,12 @@ Pod::Spec.new do |s|
   }
 
   s.author       = { "Thomas Joulin" => "toutankharton@gmail.com" }
-#  s.source       = { :git => "https://github.com/thomasjoulin/TJFoundation.git", :tag => "v0.0.1" }
-  s.source	 = { :local => '~/Dropbox/TJFoundation' }
+  s.source       = { :git => "https://github.com/thomasjoulin/TJFoundation.git", :commit => "c39d6c47483dc275b127c7cf3c56008f780d0d5f" }
   s.platform     = :ios
-  s.source_files = 'TJFoundation/*.{h,m}'
+  s.source_files = 'TJFoundation', 'TJFoundation/**/*.{h,m}'
   s.resource  = "TJFoundationResources/Images"
   s.frameworks = 'MapKit', 'QuartzCore'
   # s.requires_arc = true
   s.dependency 'TBXML', '1.5'
-#  s.dependency 'AFNetworking', :head
+#  s.dependency 'AFNetworking', 
 end

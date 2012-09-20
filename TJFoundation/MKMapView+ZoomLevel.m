@@ -8,9 +8,6 @@
 
 #import "MKMapView+ZoomLevel.h"
 
-// MKMapView+ZoomLevel.m
-#import "MKMapView+ZoomLevel.h"
-
 #define MERCATOR_OFFSET 268435456
 #define MERCATOR_RADIUS 85445659.44705395
 
