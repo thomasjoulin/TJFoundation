@@ -27,4 +27,18 @@
 	return index.location;
 }
 
+- (NSString *)substringFrom:(NSInteger)a to:(NSInteger)b
+{
+    if (a == -1 || b == -1)
+    {
+        return  nil;
+    }
+    
+	NSRange r;
+    
+	r.location = a;
+	r.length = b - a;
+	return [self substringWithRange:r];
+}
+
 @end

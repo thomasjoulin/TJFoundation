@@ -11,5 +11,6 @@
 @interface NSString (Substring)
 
 - (NSInteger)indexOf:(NSString *)substring from:(NSInteger)starts;
+- (NSString *)substringFrom:(NSInteger)a to:(NSInteger)b;
 
 @end
