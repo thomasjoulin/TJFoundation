@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/thomasjoulin/TJFoundation.git", :commit => "c39d6c47483dc275b127c7cf3c56008f780d0d5f" }
   s.platform     = :ios
   s.source_files = 'TJFoundation', 'TJFoundation/**/*.{h,m}'
-  s.resource  = "TJFoundationResources/Images"
-  s.frameworks = 'MapKit', 'QuartzCore'
+  s.resource  	 = "TJFoundationResources/Images"
+  s.frameworks 	 = 'MapKit', 'QuartzCore'
+  s.requires_arc = true
 end

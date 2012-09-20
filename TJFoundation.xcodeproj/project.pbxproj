@@ -32,20 +32,14 @@
 		E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E943349E160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */; };
 		E9433507160AB9CA00ABEFC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
-<<<<<<< HEAD
-		E943351B160AC07200ABEFC2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7B7C215A0FCFD0043A242 /* MapKit.framework */; };
-		E943351C160AC07D00ABEFC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7B7C415A0FD110043A242 /* UIKit.framework */; };
-		E943351D160AC08600ABEFC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
-=======
->>>>>>> c42947d50faf4063635bb99fef1f8f895b287554
 		E9452F5A15B80642006655B1 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = E9452F5815B80642006655B1 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9452F5B15B80642006655B1 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E9452F5915B80642006655B1 /* UIView+Frame.m */; };
 		E945FFF515AC7EEF00A6E015 /* NSObject+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E945FFF315AC7EEF00A6E015 /* NSObject+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E945FFF615AC7EEF00A6E015 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E945FFF415AC7EEF00A6E015 /* NSObject+Additions.m */; };
-<<<<<<< HEAD
-=======
-		E987A64415BD9C3600985E83 /* NSObject+Properties.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63715BD9C3600985E83 /* NSObject+Properties.h */; settings = {ATTRIBUTES = (Public, ); }; };
->>>>>>> c42947d50faf4063635bb99fef1f8f895b287554
+		E96AB822160AC4DB0007B565 /* libTJFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC364615A0E1B700F40D63 /* libTJFoundation.a */; };
+		E96AB824160AC4E20007B565 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
+		E96AB825160AC4E80007B565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7B7C415A0FD110043A242 /* UIKit.framework */; };
+		E96AB826160AC4EB0007B565 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7B7C215A0FCFD0043A242 /* MapKit.framework */; };
 		E987A64515BD9C3600985E83 /* NSString+PropertyKVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */; };
 		E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,8 +67,6 @@
 		E9E7B78815A0F9FF0043A242 /* NSArray+Underscore.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E7B77E15A0F9FF0043A242 /* NSArray+Underscore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9FA2A9A15AF4FAF00ABE286 /* NSObject+Subscripting.h in Headers */ = {isa = PBXBuildFile; fileRef = E9FA2A9915AF4FAF00ABE286 /* NSObject+Subscripting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9FC364A15A0E1B700F40D63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC364915A0E1B700F40D63 /* Foundation.framework */; };
-		E9FC365B15A0E1B700F40D63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC364915A0E1B700F40D63 /* Foundation.framework */; };
-		E9FC365E15A0E1B700F40D63 /* libTJFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC364615A0E1B700F40D63 /* libTJFoundation.a */; };
 		E9FC366415A0E1B700F40D63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9FC366215A0E1B700F40D63 /* InfoPlist.strings */; };
 		E9FC366715A0E1B700F40D63 /* TJFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FC366615A0E1B700F40D63 /* TJFoundationTests.m */; };
 		E9FC367715A0E34900F40D63 /* TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E9FC364E15A0E1B700F40D63 /* TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -117,11 +109,6 @@
 		E9452F5915B80642006655B1 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		E945FFF315AC7EEF00A6E015 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
 		E945FFF415AC7EEF00A6E015 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
-		E987A63615BD9C3600985E83 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
-		E987A63715BD9C3600985E83 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Properties.h"; sourceTree = "<group>"; };
->>>>>>> c42947d50faf4063635bb99fef1f8f895b287554
 		E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PropertyKVC.h"; sourceTree = "<group>"; };
 		E987A63915BD9C3600985E83 /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyKVC.m"; sourceTree = "<group>"; };
 		E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
@@ -190,19 +177,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				E943351D160AC08600ABEFC2 /* SenTestingKit.framework in Frameworks */,
-				E943351C160AC07D00ABEFC2 /* UIKit.framework in Frameworks */,
-				E943351B160AC07200ABEFC2 /* MapKit.framework in Frameworks */,
-				E9FC365E15A0E1B700F40D63 /* libTJFoundation.a in Frameworks */,
-				E9FC365B15A0E1B700F40D63 /* Foundation.framework in Frameworks */,
-=======
-				E9FC365E15A0E1B700F40D63 /* libTJFoundation.a in Frameworks */,
-				E9FC365B15A0E1B700F40D63 /* Foundation.framework in Frameworks */,
-				E9FC365815A0E1B700F40D63 /* SenTestingKit.framework in Frameworks */,
-				E9E7B7C515A0FD110043A242 /* UIKit.framework in Frameworks */,
-				E9E7B7C315A0FCFD0043A242 /* MapKit.framework in Frameworks */,
->>>>>>> c42947d50faf4063635bb99fef1f8f895b287554
+				E96AB826160AC4EB0007B565 /* MapKit.framework in Frameworks */,
+				E96AB825160AC4E80007B565 /* UIKit.framework in Frameworks */,
+				E96AB824160AC4E20007B565 /* SenTestingKit.framework in Frameworks */,
+				E96AB822160AC4DB0007B565 /* libTJFoundation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,10 +472,6 @@
 				E9452F5A15B80642006655B1 /* UIView+Frame.h in Headers */,
 				E908AC4915B95865003B0CE5 /* NSBundle+TJFoundation.h in Headers */,
 				E908AC4E15B95943003B0CE5 /* UIImage+Bundle.h in Headers */,
-<<<<<<< HEAD
-=======
-				E987A64415BD9C3600985E83 /* NSObject+Properties.h in Headers */,
->>>>>>> c42947d50faf4063635bb99fef1f8f895b287554
 				E987A64515BD9C3600985E83 /* NSString+PropertyKVC.h in Headers */,
 				E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */,
 				E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */,
