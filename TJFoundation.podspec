@@ -18,5 +18,4 @@ Pod::Spec.new do |s|
   s.source_files = 'TJFoundation', 'TJFoundation/**/*.{h,m}'
   s.resource  = "TJFoundationResources/Images"
   s.frameworks = 'MapKit', 'QuartzCore'
-  s.requires_arc = true
 end
