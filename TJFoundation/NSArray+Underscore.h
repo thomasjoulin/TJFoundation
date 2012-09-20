@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+Blocks.h"
 
 typedef id   (^ TJReduceBlock)(id memo, id obj);
 typedef BOOL (^ TJFindBlock)(id obj);
@@ -29,10 +28,10 @@ typedef BOOL (^ TJFindBlock)(id obj);
 - (id)reduceWithMemo:(id)memo andReduceBlock:(TJReduceBlock)context;
 - (id)reduceRightWithMemo:(id)memo andReduceBlock:(TJReduceBlock)context;
 - (id)find:(TJFindBlock)context;
-- (NSArray *)filter:(TJTestBlock)context;
-- (NSArray *)reject:(TJTestBlock)context;
-- (BOOL)all:(TJTestBlock)context;
-- (BOOL)any:(TJTestBlock)context;
+//- (NSArray *)filter:(TJTestBlock)context;
+//- (NSArray *)reject:(TJTestBlock)context;
+//- (BOOL)all:(TJTestBlock)context;
+//- (BOOL)any:(TJTestBlock)context;
 - (NSArray *)pluck:(NSString *)propertyName;
 - (id)max;
 - (id)maxUsingBlock:(id (^)(id obj))context;

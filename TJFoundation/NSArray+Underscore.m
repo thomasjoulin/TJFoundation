@@ -77,52 +77,52 @@
     return self;
 }
 
-- (NSArray *)filter:(TJTestBlock)context
-{
-    NSMutableArray *array = [NSMutableArray array];
-
-    for (id obj in self)
-    {
-        if (context(obj))
-        {
-            [array addObject:obj];
-        }
-    }
-    
-    return array;
-}
-
-- (NSArray *)reject:(BOOL (^)(id obj))context
-{
-    return [self filter:[NSObject negateBlock:context]];
-}
-
-- (BOOL)all:(TJTestBlock)context
-{
-    for (id obj in self)
-    {
-        if (!context(obj))
-        {
-            return NO;
-        }
-    }
-    
-    return [self count] != 0;
-}
-
-- (BOOL)any:(TJTestBlock)context
-{
-    for (id obj in self)
-    {
-        if (context(obj))
-        {
-            return YES;
-        }
-    }
-    
-    return NO;
-}
-
+//- (NSArray *)filter:(TJTestBlock)context
+//{
+//    NSMutableArray *array = [NSMutableArray array];
+//
+//    for (id obj in self)
+//    {
+//        if (context(obj))
+//        {
+//            [array addObject:obj];
+//        }
+//    }
+//    
+//    return array;
+//}
+//
+//- (NSArray *)reject:(BOOL (^)(id obj))context
+//{
+//    return [self filter:[NSObject negateBlock:context]];
+//}
+//
+//- (BOOL)all:(TJTestBlock)context
+//{
+//    for (id obj in self)
+//    {
+//        if (!context(obj))
+//        {
+//            return NO;
+//        }
+//    }
+//    
+//    return [self count] != 0;
+//}
+//
+//- (BOOL)any:(TJTestBlock)context
+//{
+//    for (id obj in self)
+//    {
+//        if (context(obj))
+//        {
+//            return YES;
+//        }
+//    }
+//    
+//    return NO;
+//}
+//
 - (id)max
 {
     return [self maxUsingBlock:^ id (id obj) { return obj; }];

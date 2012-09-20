@@ -9,10 +9,10 @@
 #pragma mark -
 #pragma Categories
 
-#import <TJFoundation/AFNetworking.h>
+//#import <TJFoundation/AFNetworking.h>
 
 #import <TJFoundation/NSObject+Subscripting.h>
-#import <TJFoundation/NSObject+Blocks.h>
+//#import <TJFoundation/NSObject+Blocks.h>
 #import <TJFoundation/NSObject+Additions.h>
 
 #import <TJFoundation/MKMapView+ZoomLevel.h>

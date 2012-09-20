@@ -7,8 +7,7 @@
 //
 
 #import "TJDataSource.h"
-#import "AFNetworking.h"
-#import "TBXML+NSDictionary.h"
+//#import "TBXML+NSDictionary.h"
 
 @interface TJDataSource ()
 {
@@ -47,60 +46,60 @@
 
 - (void)_performJSONOperationWithRequest:(NSURLRequest *)request
 {
-    AFJSONRequestOperation *operation;
-
-    operation = [AFJSONRequestOperation
-                    JSONRequestOperationWithRequest:request
-                    success:^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject)
-                    {
-                        if ([responseObject isKindOfClass:[NSArray class]])
-                        {
-                            if (_model.rootNodeName)
-                            {
-                                [_model fillWithDictionary:@{ _model.rootNodeName : responseObject }];
-                            }
-                        }
-                        else
-                        {
-                            [_model fillWithDictionary:responseObject];
-                        }
-
-                        if ([self.delegate respondsToSelector:@selector(datasourceDidFinishLoading:)])
-                        {
-                            [self.delegate datasourceDidFinishLoading:self];
-                        }
-                    }
-                    failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
-                    {
-                        NSLog(@"%@", error);
-                    }];
-
-    [operation start];
+//    AFJSONRequestOperation *operation;
+//
+//    operation = [AFJSONRequestOperation
+//                    JSONRequestOperationWithRequest:request
+//                    success:^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject)
+//                    {
+//                        if ([responseObject isKindOfClass:[NSArray class]])
+//                        {
+//                            if (_model.rootNodeName)
+//                            {
+//                                [_model fillWithDictionary:@{ _model.rootNodeName : responseObject }];
+//                            }
+//                        }
+//                        else
+//                        {
+//                            [_model fillWithDictionary:responseObject];
+//                        }
+//
+//                        if ([self.delegate respondsToSelector:@selector(datasourceDidFinishLoading:)])
+//                        {
+//                            [self.delegate datasourceDidFinishLoading:self];
+//                        }
+//                    }
+//                    failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
+//                    {
+//                        NSLog(@"%@", error);
+//                    }];
+//
+//    [operation start];
 }
 
 - (void)_performXMLOperationWithRequest:(NSURLRequest *)request
 {
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-
-    [operation
-     setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, NSData *responseObject)
-     {
-         NSDictionary *responseDictionary = [TBXML dictionaryWithXMLData:responseObject];
+//    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+//
+//    [operation
+//     setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, NSData *responseObject)
+//     {
+//         NSDictionary *responseDictionary = [TBXML dictionaryWithXMLData:responseObject];
 //         NSLog(@"%@", responseDictionary);
-
-         [_model fillWithDictionary:responseDictionary];
-
-         if ([self.delegate respondsToSelector:@selector(datasourceDidFinishLoading:)])
-         {
-             [self.delegate datasourceDidFinishLoading:self];
-         }
-     }
-     failure:^(AFHTTPRequestOperation *operation, NSError *error)
-     {
-         NSLog(@"%@", error);
-     }];
-
-    [operation start];
+//
+//         [_model fillWithDictionary:responseDictionary];
+//
+//         if ([self.delegate respondsToSelector:@selector(datasourceDidFinishLoading:)])
+//         {
+//             [self.delegate datasourceDidFinishLoading:self];
+//         }
+//     }
+//     failure:^(AFHTTPRequestOperation *operation, NSError *error)
+//     {
+//         NSLog(@"%@", error);
+//     }];
+//
+//    [operation start];
 }
 
 - (id)objectAtIndexPath:(NSIndexPath *)indexPath
