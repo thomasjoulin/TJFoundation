@@ -37,4 +37,5 @@
 #import <TJFoundation/UIDevice+Additions.h>
 #import <TJFoundation/UIImage+Bundle.h>
 
+#import <TJFoundation/UIView+Screenshot.h>
 #import <TJFoundation/UIView+Frame.h>

@@ -33,6 +33,8 @@
 		E911279F167ED62B001023AB /* NSArray+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E911279D167ED62B001023AB /* NSArray+TJFoundation.m */; };
 		E91127AA167EDA58001023AB /* NSNumber+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E91127A8167EDA58001023AB /* NSNumber+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E91127AB167EDA58001023AB /* NSNumber+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127A9167EDA58001023AB /* NSNumber+TJFoundation.m */; };
+		E91127AF167EDAE6001023AB /* UIView+Screenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = E91127AD167EDAE6001023AB /* UIView+Screenshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91127B0167EDAE6001023AB /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127AE167EDAE6001023AB /* UIView+Screenshot.m */; };
 		E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E943349E160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */; };
 		E9433507160AB9CA00ABEFC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
@@ -113,6 +115,8 @@
 		E911279D167ED62B001023AB /* NSArray+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TJFoundation.m"; sourceTree = "<group>"; };
 		E91127A8167EDA58001023AB /* NSNumber+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+TJFoundation.h"; sourceTree = "<group>"; };
 		E91127A9167EDA58001023AB /* NSNumber+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+TJFoundation.m"; sourceTree = "<group>"; };
+		E91127AD167EDAE6001023AB /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		E91127AE167EDAE6001023AB /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		E9452F5815B80642006655B1 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -240,6 +244,8 @@
 			children = (
 				E9452F5815B80642006655B1 /* UIView+Frame.h */,
 				E9452F5915B80642006655B1 /* UIView+Frame.m */,
+				E91127AD167EDAE6001023AB /* UIView+Screenshot.h */,
+				E91127AE167EDAE6001023AB /* UIView+Screenshot.m */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
@@ -504,6 +510,7 @@
 				E9B7E2D0160AF2A00053E55C /* MKMapView+Regions.h in Headers */,
 				E911279E167ED62B001023AB /* NSArray+TJFoundation.h in Headers */,
 				E91127AA167EDA58001023AB /* NSNumber+TJFoundation.h in Headers */,
+				E91127AF167EDAE6001023AB /* UIView+Screenshot.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +694,7 @@
 				E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */,
 				E911279F167ED62B001023AB /* NSArray+TJFoundation.m in Sources */,
 				E91127AB167EDA58001023AB /* NSNumber+TJFoundation.m in Sources */,
+				E91127B0167EDAE6001023AB /* UIView+Screenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
