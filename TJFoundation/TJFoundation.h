@@ -43,3 +43,5 @@
 
 #import <TJFoundation/UIView+Screenshot.h>
 #import <TJFoundation/UIView+Frame.h>
+
+#import <TJFoundation/SKProduct+TJFoundation.h>
