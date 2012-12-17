@@ -24,6 +24,8 @@
 
 #import <TJFoundation/NSDictionary+Additions.h>
 
+#import <TJFoundation/NSNumber+TJFoundation.h>
+
 #import <TJFoundation/NSString+Converting.h>
 #import <TJFoundation/NSString+Identifying.h>
 #import <TJFoundation/NSString+Manipulating.h>

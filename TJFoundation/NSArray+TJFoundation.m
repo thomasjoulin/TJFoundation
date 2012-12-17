@@ -1,14 +1,14 @@
 //
-//  NSArray+TJFoundationAdditions.m
+//  NSArray+TJFoundation.m
 //  TJFoundation
 //
 //  Created by Thomas Joulin on 12/17/12.
 //
 //
 
-#import "NSArray+TJFoundationAdditions.h"
+#import "NSArray+TJFoundation.h"
 
-@implementation NSArray (TJFoundationAdditions)
+@implementation NSArray (TJFoundation)
 
 - (id)objectWithValue:(id)value forKey:(id)key
 {

@@ -29,8 +29,10 @@
 		E908AC4A15B95865003B0CE5 /* NSBundle+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E908AC4815B95865003B0CE5 /* NSBundle+TJFoundation.m */; };
 		E908AC4E15B95943003B0CE5 /* UIImage+Bundle.h in Headers */ = {isa = PBXBuildFile; fileRef = E908AC4C15B95943003B0CE5 /* UIImage+Bundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E908AC4F15B95943003B0CE5 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E908AC4D15B95943003B0CE5 /* UIImage+Bundle.m */; };
-		E911279E167ED62B001023AB /* NSArray+TJFoundationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E911279C167ED62B001023AB /* NSArray+TJFoundationAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E911279F167ED62B001023AB /* NSArray+TJFoundationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E911279D167ED62B001023AB /* NSArray+TJFoundationAdditions.m */; };
+		E911279E167ED62B001023AB /* NSArray+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E911279C167ED62B001023AB /* NSArray+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E911279F167ED62B001023AB /* NSArray+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E911279D167ED62B001023AB /* NSArray+TJFoundation.m */; };
+		E91127AA167EDA58001023AB /* NSNumber+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E91127A8167EDA58001023AB /* NSNumber+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91127AB167EDA58001023AB /* NSNumber+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127A9167EDA58001023AB /* NSNumber+TJFoundation.m */; };
 		E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E943349E160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */; };
 		E9433507160AB9CA00ABEFC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
@@ -107,8 +109,10 @@
 		E908AC4815B95865003B0CE5 /* NSBundle+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TJFoundation.m"; sourceTree = "<group>"; };
 		E908AC4C15B95943003B0CE5 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
 		E908AC4D15B95943003B0CE5 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
-		E911279C167ED62B001023AB /* NSArray+TJFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TJFoundationAdditions.h"; sourceTree = "<group>"; };
-		E911279D167ED62B001023AB /* NSArray+TJFoundationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TJFoundationAdditions.m"; sourceTree = "<group>"; };
+		E911279C167ED62B001023AB /* NSArray+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TJFoundation.h"; sourceTree = "<group>"; };
+		E911279D167ED62B001023AB /* NSArray+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TJFoundation.m"; sourceTree = "<group>"; };
+		E91127A8167EDA58001023AB /* NSNumber+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+TJFoundation.h"; sourceTree = "<group>"; };
+		E91127A9167EDA58001023AB /* NSNumber+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+TJFoundation.m"; sourceTree = "<group>"; };
 		E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		E9452F5815B80642006655B1 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -222,6 +226,15 @@
 			name = UIImage;
 			sourceTree = "<group>";
 		};
+		E91127A7167EDA2D001023AB /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				E91127A8167EDA58001023AB /* NSNumber+TJFoundation.h */,
+				E91127A9167EDA58001023AB /* NSNumber+TJFoundation.m */,
+			);
+			name = NSNumber;
+			sourceTree = "<group>";
+		};
 		E9452F5D15B80648006655B1 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +281,7 @@
 				E908AC4615B95850003B0CE5 /* NSBundle */,
 				E9E7B70C15A0F4E80043A242 /* NSData */,
 				E9E7B78E15A0FAAD0043A242 /* NSDictionary */,
+				E91127A7167EDA2D001023AB /* NSNumber */,
 				E9E7B78D15A0FAA40043A242 /* NSObject */,
 				E9E7B6FB15A0EA800043A242 /* NSString */,
 				E9E7B73E15A0F7DD0043A242 /* UIColor */,
@@ -356,8 +370,8 @@
 			children = (
 				E9E7B77E15A0F9FF0043A242 /* NSArray+Underscore.h */,
 				E9E7B77D15A0F9FF0043A242 /* NSArray+Underscore.m */,
-				E911279C167ED62B001023AB /* NSArray+TJFoundationAdditions.h */,
-				E911279D167ED62B001023AB /* NSArray+TJFoundationAdditions.m */,
+				E911279C167ED62B001023AB /* NSArray+TJFoundation.h */,
+				E911279D167ED62B001023AB /* NSArray+TJFoundation.m */,
 			);
 			name = NSArray;
 			sourceTree = "<group>";
@@ -488,7 +502,8 @@
 				E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */,
 				E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */,
 				E9B7E2D0160AF2A00053E55C /* MKMapView+Regions.h in Headers */,
-				E911279E167ED62B001023AB /* NSArray+TJFoundationAdditions.h in Headers */,
+				E911279E167ED62B001023AB /* NSArray+TJFoundation.h in Headers */,
+				E91127AA167EDA58001023AB /* NSNumber+TJFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,7 +685,8 @@
 				E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */,
 				E943349E160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m in Sources */,
 				E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */,
-				E911279F167ED62B001023AB /* NSArray+TJFoundationAdditions.m in Sources */,
+				E911279F167ED62B001023AB /* NSArray+TJFoundation.m in Sources */,
+				E91127AB167EDA58001023AB /* NSNumber+TJFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
