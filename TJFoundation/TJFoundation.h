@@ -37,6 +37,7 @@
 #import <TJFoundation/UIDevice+Additions.h>
 
 #import <TJFoundation/UIImage+Bundle.h>
+#import <TJFoundation/UIImage+Crop.h>
 
 #import <TJFoundation/UIImageView+TJFoundation.h>
 

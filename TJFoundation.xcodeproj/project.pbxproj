@@ -37,6 +37,8 @@
 		E91127B0167EDAE6001023AB /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127AE167EDAE6001023AB /* UIView+Screenshot.m */; };
 		E91127BA167EDB95001023AB /* UIImageView+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E91127B8167EDB95001023AB /* UIImageView+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E91127BB167EDB95001023AB /* UIImageView+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127B9167EDB95001023AB /* UIImageView+TJFoundation.m */; };
+		E91127BF167EDC00001023AB /* UIImage+Crop.h in Headers */ = {isa = PBXBuildFile; fileRef = E91127BD167EDC00001023AB /* UIImage+Crop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91127C0167EDC00001023AB /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127BE167EDC00001023AB /* UIImage+Crop.m */; };
 		E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E943349E160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */; };
 		E9433507160AB9CA00ABEFC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
@@ -121,6 +123,8 @@
 		E91127AE167EDAE6001023AB /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		E91127B8167EDB95001023AB /* UIImageView+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TJFoundation.h"; sourceTree = "<group>"; };
 		E91127B9167EDB95001023AB /* UIImageView+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TJFoundation.m"; sourceTree = "<group>"; };
+		E91127BD167EDC00001023AB /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		E91127BE167EDC00001023AB /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 		E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		E9452F5815B80642006655B1 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 			children = (
 				E908AC4C15B95943003B0CE5 /* UIImage+Bundle.h */,
 				E908AC4D15B95943003B0CE5 /* UIImage+Bundle.m */,
+				E91127BD167EDC00001023AB /* UIImage+Crop.h */,
+				E91127BE167EDC00001023AB /* UIImage+Crop.m */,
 			);
 			name = UIImage;
 			sourceTree = "<group>";
@@ -526,6 +532,7 @@
 				E91127AA167EDA58001023AB /* NSNumber+TJFoundation.h in Headers */,
 				E91127AF167EDAE6001023AB /* UIView+Screenshot.h in Headers */,
 				E91127BA167EDB95001023AB /* UIImageView+TJFoundation.h in Headers */,
+				E91127BF167EDC00001023AB /* UIImage+Crop.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +718,7 @@
 				E91127AB167EDA58001023AB /* NSNumber+TJFoundation.m in Sources */,
 				E91127B0167EDAE6001023AB /* UIView+Screenshot.m in Sources */,
 				E91127BB167EDB95001023AB /* UIImageView+TJFoundation.m in Sources */,
+				E91127C0167EDC00001023AB /* UIImage+Crop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
