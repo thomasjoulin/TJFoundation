@@ -15,6 +15,7 @@
 #import <TJFoundation/MKMapView+ZoomLevel.h>
 #import <TJFoundation/MKMapView+Regions.h>
 
+#import <TJFoundation/NSArray+TJFoundationAdditions.h>
 #import <TJFoundation/NSArray+Underscore.h>
 
 #import <TJFoundation/NSBundle+TJFoundation.h>
