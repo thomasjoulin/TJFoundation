@@ -55,6 +55,8 @@
 		E987A64515BD9C3600985E83 /* NSString+PropertyKVC.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E987A64815BD9C3600985E83 /* UIAlertView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */; };
 		E987A64915BD9C3600985E83 /* UIAlertView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E98958EA168C098100FDDEEE /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = E98958E8168C098100FDDEEE /* UIImage+Resize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E98958EB168C098100FDDEEE /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E98958E9168C098100FDDEEE /* UIImage+Resize.m */; };
 		E9B7E2D0160AF2A00053E55C /* MKMapView+Regions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */; };
 		E9D0D54415A19D06007F9309 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0D54315A19D06007F9309 /* ArrayTests.m */; };
@@ -139,6 +141,8 @@
 		E987A63915BD9C3600985E83 /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyKVC.m"; sourceTree = "<group>"; };
 		E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
 		E987A63C15BD9C3600985E83 /* UIAlertView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Additions.h"; sourceTree = "<group>"; };
+		E98958E8168C098100FDDEEE /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		E98958E9168C098100FDDEEE /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Regions.h"; sourceTree = "<group>"; };
 		E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Regions.m"; sourceTree = "<group>"; };
 		E9D0D54215A19D06007F9309 /* ArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTests.h; sourceTree = "<group>"; };
@@ -240,6 +244,8 @@
 				E908AC4D15B95943003B0CE5 /* UIImage+Bundle.m */,
 				E91127BD167EDC00001023AB /* UIImage+Crop.h */,
 				E91127BE167EDC00001023AB /* UIImage+Crop.m */,
+				E98958E8168C098100FDDEEE /* UIImage+Resize.h */,
+				E98958E9168C098100FDDEEE /* UIImage+Resize.m */,
 			);
 			name = UIImage;
 			sourceTree = "<group>";
@@ -548,6 +554,7 @@
 				E91127BA167EDB95001023AB /* UIImageView+TJFoundation.h in Headers */,
 				E91127BF167EDC00001023AB /* UIImage+Crop.h in Headers */,
 				E91127C4167EDC50001023AB /* SKProduct+TJFoundation.h in Headers */,
+				E98958EA168C098100FDDEEE /* UIImage+Resize.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +742,7 @@
 				E91127BB167EDB95001023AB /* UIImageView+TJFoundation.m in Sources */,
 				E91127C0167EDC00001023AB /* UIImage+Crop.m in Sources */,
 				E91127C5167EDC50001023AB /* SKProduct+TJFoundation.m in Sources */,
+				E98958EB168C098100FDDEEE /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
