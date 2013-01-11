@@ -42,6 +42,8 @@
 
 #import <TJFoundation/UIImageView+TJFoundation.h>
 
+#import <TJFoundation/UIScreen+TJFoundation.h>
+
 #import <TJFoundation/UIView+Screenshot.h>
 #import <TJFoundation/UIView+Frame.h>
 

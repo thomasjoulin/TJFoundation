@@ -41,6 +41,8 @@
 		E91127C0167EDC00001023AB /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127BE167EDC00001023AB /* UIImage+Crop.m */; };
 		E91127C4167EDC50001023AB /* SKProduct+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E91127C2167EDC50001023AB /* SKProduct+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E91127C5167EDC50001023AB /* SKProduct+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127C3167EDC50001023AB /* SKProduct+TJFoundation.m */; };
+		E92205A7169FD29C00BF8937 /* UIScreen+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E92205A5169FD29C00BF8937 /* UIScreen+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E92205A8169FD29C00BF8937 /* UIScreen+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E92205A6169FD29C00BF8937 /* UIScreen+TJFoundation.m */; };
 		E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E943349E160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */; };
 		E9433507160AB9CA00ABEFC2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
@@ -131,6 +133,8 @@
 		E91127BE167EDC00001023AB /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 		E91127C2167EDC50001023AB /* SKProduct+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+TJFoundation.h"; sourceTree = "<group>"; };
 		E91127C3167EDC50001023AB /* SKProduct+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+TJFoundation.m"; sourceTree = "<group>"; };
+		E92205A5169FD29C00BF8937 /* UIScreen+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+TJFoundation.h"; sourceTree = "<group>"; };
+		E92205A6169FD29C00BF8937 /* UIScreen+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+TJFoundation.m"; sourceTree = "<group>"; };
 		E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		E943349C160AAD7400ABEFC2 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		E9452F5815B80642006655B1 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -277,6 +281,15 @@
 			name = SKProduct;
 			sourceTree = "<group>";
 		};
+		E92205A3169FD28300BF8937 /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E92205A5169FD29C00BF8937 /* UIScreen+TJFoundation.h */,
+				E92205A6169FD29C00BF8937 /* UIScreen+TJFoundation.m */,
+			);
+			name = UIScreen;
+			sourceTree = "<group>";
+		};
 		E9452F5D15B80648006655B1 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +345,7 @@
 				E904A8F015AD802A004505A1 /* UIDevice */,
 				E908AC4B15B95935003B0CE5 /* UIImage */,
 				E91127B1167EDB18001023AB /* UIImageView */,
+				E92205A3169FD28300BF8937 /* UIScreen */,
 				E9452F5D15B80648006655B1 /* UIView */,
 				E91127C1167EDC4A001023AB /* SKProduct */,
 			);
@@ -555,6 +569,7 @@
 				E91127BF167EDC00001023AB /* UIImage+Crop.h in Headers */,
 				E91127C4167EDC50001023AB /* SKProduct+TJFoundation.h in Headers */,
 				E98958EA168C098100FDDEEE /* UIImage+Resize.h in Headers */,
+				E92205A7169FD29C00BF8937 /* UIScreen+TJFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,6 +758,7 @@
 				E91127C0167EDC00001023AB /* UIImage+Crop.m in Sources */,
 				E91127C5167EDC50001023AB /* SKProduct+TJFoundation.m in Sources */,
 				E98958EB168C098100FDDEEE /* UIImage+Resize.m in Sources */,
+				E92205A8169FD29C00BF8937 /* UIScreen+TJFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
