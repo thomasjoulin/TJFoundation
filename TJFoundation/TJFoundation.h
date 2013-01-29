@@ -31,6 +31,8 @@
 #import <TJFoundation/NSString+Manipulating.h>
 #import <TJFoundation/NSString+Substring.h>
 
+#import <TJFoundation/NSUserDefaults+TJFoundation.h>
+
 #import <TJFoundation/UIColor+Additions.h>
 #import <TJFoundation/UIColor+ATColorExtension.h>
 
