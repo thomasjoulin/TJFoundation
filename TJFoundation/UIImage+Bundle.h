@@ -10,6 +10,6 @@
 
 @interface UIImage (Bundle)
 
-+ (UIImage *)imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle;
+//+ (UIImage *)imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle;
 
 @end

@@ -11,9 +11,10 @@
 
 @implementation UIImage (Bundle)
 
-+ (UIImage *)imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle
-{
-    return [UIImage imageWithContentsOfFile:[[NSBundle TJFoundationBundle] pathForResource:imageName ofType:nil]];
-}
+//// Causes crashed because is a private method : stackoverflow.com/questions/13798254/ios-crash-missing-images-before-playing-video+&cd=1&hl=en&ct=clnk
+//+ (UIImage *)imageNamed:(NSString *)imageName inBundle:(NSBundle *)bundle
+//{
+//    return [UIImage imageWithContentsOfFile:[[NSBundle TJFoundationBundle] pathForResource:imageName ofType:nil]];
+//}
 
 @end
