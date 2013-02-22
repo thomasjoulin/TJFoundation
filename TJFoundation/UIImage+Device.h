@@ -8,6 +8,6 @@
 
 @interface UIImage (Device)
 
-- (UIImage *)imageNamed:(NSString *)imageName resolutionIndependant:(BOOL)resolutionIndependant;
++ (UIImage *)imageNamed:(NSString *)imageName resolutionIndependant:(BOOL)resolutionIndependant;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation UIImage (Device)
 
-- (UIImage *)imageNamed:(NSString *)imageName resolutionIndependant:(BOOL)resolutionIndependant
++ (UIImage *)imageNamed:(NSString *)imageName resolutionIndependant:(BOOL)resolutionIndependant
 {
     if (resolutionIndependant &&
         [UIScreen mainScreen].bounds.size.height == 568.f &&
