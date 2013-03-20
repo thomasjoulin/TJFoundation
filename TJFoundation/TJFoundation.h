@@ -51,3 +51,6 @@
 #import <TJFoundation/UIView+Frame.h>
 
 #import <TJFoundation/SKProduct+TJFoundation.h>
+
+#import <TJFoundation/UIWebView+RemoveShadow.h>
+#import <TJFoundation/UIWebView+Youtube.h>
