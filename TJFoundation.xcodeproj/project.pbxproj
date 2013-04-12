@@ -43,6 +43,8 @@
 		E91127C5167EDC50001023AB /* SKProduct+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E91127C3167EDC50001023AB /* SKProduct+TJFoundation.m */; };
 		E92205A7169FD29C00BF8937 /* UIScreen+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E92205A5169FD29C00BF8937 /* UIScreen+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E92205A8169FD29C00BF8937 /* UIScreen+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E92205A6169FD29C00BF8937 /* UIScreen+TJFoundation.m */; };
+		E9290D6A1717B24A00C90105 /* UILabel+Sizing.h in Headers */ = {isa = PBXBuildFile; fileRef = E9290D681717B24A00C90105 /* UILabel+Sizing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9290D6B1717B24A00C90105 /* UILabel+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = E9290D691717B24A00C90105 /* UILabel+Sizing.m */; };
 		E934053116B7959E009204DB /* NSUserDefaults+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E934052F16B7959E009204DB /* NSUserDefaults+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E934053216B7959E009204DB /* NSUserDefaults+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E934053016B7959E009204DB /* NSUserDefaults+TJFoundation.m */; };
 		E943349D160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -143,6 +145,8 @@
 		E91127C3167EDC50001023AB /* SKProduct+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+TJFoundation.m"; sourceTree = "<group>"; };
 		E92205A5169FD29C00BF8937 /* UIScreen+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+TJFoundation.h"; sourceTree = "<group>"; };
 		E92205A6169FD29C00BF8937 /* UIScreen+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+TJFoundation.m"; sourceTree = "<group>"; };
+		E9290D681717B24A00C90105 /* UILabel+Sizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Sizing.h"; sourceTree = "<group>"; };
+		E9290D691717B24A00C90105 /* UILabel+Sizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Sizing.m"; sourceTree = "<group>"; };
 		E934052F16B7959E009204DB /* NSUserDefaults+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+TJFoundation.h"; sourceTree = "<group>"; };
 		E934053016B7959E009204DB /* NSUserDefaults+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+TJFoundation.m"; sourceTree = "<group>"; };
 		E943349B160AAD7400ABEFC2 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
@@ -308,6 +312,15 @@
 			name = UIScreen;
 			sourceTree = "<group>";
 		};
+		E9290D671717B22C00C90105 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				E9290D681717B24A00C90105 /* UILabel+Sizing.h */,
+				E9290D691717B24A00C90105 /* UILabel+Sizing.m */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
 		E934052D16B79570009204DB /* NSUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +398,7 @@
 				E904A8F015AD802A004505A1 /* UIDevice */,
 				E908AC4B15B95935003B0CE5 /* UIImage */,
 				E91127B1167EDB18001023AB /* UIImageView */,
+				E9290D671717B22C00C90105 /* UILabel */,
 				E92205A3169FD28300BF8937 /* UIScreen */,
 				E9452F5D15B80648006655B1 /* UIView */,
 				E953E30016F9AC4C00B01D19 /* UIWebView */,
@@ -614,6 +628,7 @@
 				E949700016D7267A00D71B72 /* UIImage+Device.h in Headers */,
 				E953E30316F9ACBC00B01D19 /* UIWebView+RemoveShadow.h in Headers */,
 				E953E30716F9AD1600B01D19 /* UIWebView+Youtube.h in Headers */,
+				E9290D6A1717B24A00C90105 /* UILabel+Sizing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +822,7 @@
 				E949700116D7267A00D71B72 /* UIImage+Device.m in Sources */,
 				E953E30416F9ACBC00B01D19 /* UIWebView+RemoveShadow.m in Sources */,
 				E953E30816F9AD1600B01D19 /* UIWebView+Youtube.m in Sources */,
+				E9290D6B1717B24A00C90105 /* UILabel+Sizing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
