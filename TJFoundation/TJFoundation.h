@@ -27,6 +27,7 @@
 #import <TJFoundation/NSNumber+TJFoundation.h>
 
 #import <TJFoundation/NSString+Converting.h>
+#import <TJFoundation/NSString+Hash.h>
 #import <TJFoundation/NSString+Identifying.h>
 #import <TJFoundation/NSString+Manipulating.h>
 #import <TJFoundation/NSString+Substring.h>

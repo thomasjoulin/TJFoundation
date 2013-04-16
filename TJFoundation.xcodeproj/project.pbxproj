@@ -71,6 +71,8 @@
 		E98958EB168C098100FDDEEE /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E98958E9168C098100FDDEEE /* UIImage+Resize.m */; };
 		E9B7E2D0160AF2A00053E55C /* MKMapView+Regions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */; };
+		E9CAF27D171D473F0032894E /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CAF27B171D473E0032894E /* NSString+Hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9CAF27E171D473F0032894E /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CAF27C171D473E0032894E /* NSString+Hash.m */; };
 		E9D0D54415A19D06007F9309 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0D54315A19D06007F9309 /* ArrayTests.m */; };
 		E9E66EB915B953F7002D8B50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E66EB815B953F7002D8B50 /* CoreFoundation.framework */; };
 		E9E7B6F515A0E9100043A242 /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7B6F115A0E9030043A242 /* StringTests.m */; };
@@ -169,6 +171,8 @@
 		E98958E9168C098100FDDEEE /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Regions.h"; sourceTree = "<group>"; };
 		E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Regions.m"; sourceTree = "<group>"; };
+		E9CAF27B171D473E0032894E /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		E9CAF27C171D473E0032894E /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		E9D0D54215A19D06007F9309 /* ArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTests.h; sourceTree = "<group>"; };
 		E9D0D54315A19D06007F9309 /* ArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTests.m; sourceTree = "<group>"; };
 		E9E66EB715B953F7002D8B50 /* TJFoundationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJFoundationResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -411,6 +415,8 @@
 			children = (
 				E9E7B70815A0ED150043A242 /* NSString+Converting.h */,
 				E9E7B70915A0ED150043A242 /* NSString+Converting.m */,
+				E9CAF27B171D473E0032894E /* NSString+Hash.h */,
+				E9CAF27C171D473E0032894E /* NSString+Hash.m */,
 				E9E7B70415A0EC620043A242 /* NSString+Identifying.h */,
 				E9E7B70515A0EC620043A242 /* NSString+Identifying.m */,
 				E9E7B6FC15A0EAD80043A242 /* NSString+Manipulating.h */,
@@ -629,6 +635,7 @@
 				E953E30316F9ACBC00B01D19 /* UIWebView+RemoveShadow.h in Headers */,
 				E953E30716F9AD1600B01D19 /* UIWebView+Youtube.h in Headers */,
 				E9290D6A1717B24A00C90105 /* UILabel+Sizing.h in Headers */,
+				E9CAF27D171D473F0032894E /* NSString+Hash.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +830,7 @@
 				E953E30416F9ACBC00B01D19 /* UIWebView+RemoveShadow.m in Sources */,
 				E953E30816F9AD1600B01D19 /* UIWebView+Youtube.m in Sources */,
 				E9290D6B1717B24A00C90105 /* UILabel+Sizing.m in Sources */,
+				E9CAF27E171D473F0032894E /* NSString+Hash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
