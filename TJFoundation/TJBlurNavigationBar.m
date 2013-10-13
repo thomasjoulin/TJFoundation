@@ -22,8 +22,6 @@
 {
     [super layoutSubviews];
     
-    UICollectionViewLayout
-    
     if ([self respondsToSelector:@selector(barTintColor)])
     {
         [self.extraColorLayer removeFromSuperlayer];

@@ -60,7 +60,7 @@
 		E953E30416F9ACBC00B01D19 /* UIWebView+RemoveShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = E953E30216F9ACBC00B01D19 /* UIWebView+RemoveShadow.m */; };
 		E953E30716F9AD1600B01D19 /* UIWebView+Youtube.h in Headers */ = {isa = PBXBuildFile; fileRef = E953E30516F9AD1600B01D19 /* UIWebView+Youtube.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E953E30816F9AD1600B01D19 /* UIWebView+Youtube.m in Sources */ = {isa = PBXBuildFile; fileRef = E953E30616F9AD1600B01D19 /* UIWebView+Youtube.m */; };
-		E960A43D180AF6C2006831B6 /* TJBlurNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = E960A43B180AF6C2006831B6 /* TJBlurNavigationBar.h */; };
+		E960A43D180AF6C2006831B6 /* TJBlurNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = E960A43B180AF6C2006831B6 /* TJBlurNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E960A43E180AF6C2006831B6 /* TJBlurNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E960A43C180AF6C2006831B6 /* TJBlurNavigationBar.m */; };
 		E96AB822160AC4DB0007B565 /* libTJFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC364615A0E1B700F40D63 /* libTJFoundation.a */; };
 		E96AB824160AC4E20007B565 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };

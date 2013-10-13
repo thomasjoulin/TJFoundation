@@ -57,3 +57,5 @@
 
 #import <TJFoundation/UIWebView+RemoveShadow.h>
 #import <TJFoundation/UIWebView+Youtube.h>
+
+#import <TJFoundation/TJBlurNavigationBar.h>
