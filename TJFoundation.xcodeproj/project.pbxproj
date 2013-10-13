@@ -64,6 +64,8 @@
 		E960A43E180AF6C2006831B6 /* TJBlurNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E960A43C180AF6C2006831B6 /* TJBlurNavigationBar.m */; };
 		E960A441180AFC63006831B6 /* TJNibView.h in Headers */ = {isa = PBXBuildFile; fileRef = E960A43F180AFC63006831B6 /* TJNibView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E960A442180AFC63006831B6 /* TJNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = E960A440180AFC63006831B6 /* TJNibView.m */; };
+		E960A445180AFF64006831B6 /* UIImage+TJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E960A443180AFF64006831B6 /* UIImage+TJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E960A446180AFF64006831B6 /* UIImage+TJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E960A444180AFF64006831B6 /* UIImage+TJAdditions.m */; };
 		E96AB822160AC4DB0007B565 /* libTJFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC364615A0E1B700F40D63 /* libTJFoundation.a */; };
 		E96AB824160AC4E20007B565 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
 		E96AB825160AC4E80007B565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7B7C415A0FD110043A242 /* UIKit.framework */; };
@@ -171,6 +173,8 @@
 		E960A43C180AF6C2006831B6 /* TJBlurNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBlurNavigationBar.m; sourceTree = "<group>"; };
 		E960A43F180AFC63006831B6 /* TJNibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJNibView.h; sourceTree = "<group>"; };
 		E960A440180AFC63006831B6 /* TJNibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJNibView.m; sourceTree = "<group>"; };
+		E960A443180AFF64006831B6 /* UIImage+TJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TJAdditions.h"; sourceTree = "<group>"; };
+		E960A444180AFF64006831B6 /* UIImage+TJAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TJAdditions.m"; sourceTree = "<group>"; };
 		E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PropertyKVC.h"; sourceTree = "<group>"; };
 		E987A63915BD9C3600985E83 /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyKVC.m"; sourceTree = "<group>"; };
 		E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 				E9496FFF16D7267A00D71B72 /* UIImage+Device.m */,
 				E98958E8168C098100FDDEEE /* UIImage+Resize.h */,
 				E98958E9168C098100FDDEEE /* UIImage+Resize.m */,
+				E960A443180AFF64006831B6 /* UIImage+TJAdditions.h */,
+				E960A444180AFF64006831B6 /* UIImage+TJAdditions.m */,
 			);
 			name = UIImage;
 			sourceTree = "<group>";
@@ -641,6 +647,7 @@
 				E91127AF167EDAE6001023AB /* UIView+Screenshot.h in Headers */,
 				E91127BA167EDB95001023AB /* UIImageView+TJFoundation.h in Headers */,
 				E91127BF167EDC00001023AB /* UIImage+Crop.h in Headers */,
+				E960A445180AFF64006831B6 /* UIImage+TJAdditions.h in Headers */,
 				E91127C4167EDC50001023AB /* SKProduct+TJFoundation.h in Headers */,
 				E98958EA168C098100FDDEEE /* UIImage+Resize.h in Headers */,
 				E92205A7169FD29C00BF8937 /* UIScreen+TJFoundation.h in Headers */,
@@ -815,6 +822,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E7B6FF15A0EAD80043A242 /* NSString+Manipulating.m in Sources */,
+				E960A446180AFF64006831B6 /* UIImage+TJAdditions.m in Sources */,
 				E9E7B70315A0EC290043A242 /* NSString+Substring.m in Sources */,
 				E9E7B70715A0EC620043A242 /* NSString+Identifying.m in Sources */,
 				E9E7B70B15A0ED150043A242 /* NSString+Converting.m in Sources */,

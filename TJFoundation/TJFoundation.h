@@ -43,6 +43,7 @@
 #import <TJFoundation/UIImage+Crop.h>
 #import <TJFoundation/UIImage+Device.h>
 #import <TJFoundation/UIImage+Resize.h>
+#import <TJFoundation/UIImage+TJAdditions.h>
 
 #import <TJFoundation/UIImageView+TJFoundation.h>
 
