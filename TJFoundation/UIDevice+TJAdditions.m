@@ -1,18 +1,18 @@
 //
-//  UIDevice+Additions.m
+//  UIDevice+TJAdditions.m
 //  TJFoundation
 //
 //  Created by Thomas Joulin on 7/11/12.
 //
 //
 
-#import "UIDevice+Additions.h"
+#import "UIDevice+TJAdditions.h"
 #include <sys/socket.h>
 #include <sys/sysctl.h>
 #include <net/if.h>
 #include <net/if_dl.h>
 
-@implementation UIDevice (Additions)
+@implementation UIDevice (TJAdditions)
 
 - (NSString *)macAddress
 {
@@ -70,6 +70,11 @@
     NSLog(@"Error: %@", errorFlag);
     
     return errorFlag;
+}
+
++ (BOOL)isIOS7OrAbove
+{
+    return [UIView instancesRespondToSelector:@selector(addMotionEffect:)];
 }
 
 @end

@@ -23,8 +23,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		E904A8F415AD8047004505A1 /* UIDevice+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E904A8F215AD8047004505A1 /* UIDevice+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E904A8F515AD8047004505A1 /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = E904A8F315AD8047004505A1 /* UIDevice+Additions.m */; };
+		E904A8F415AD8047004505A1 /* UIDevice+TJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E904A8F215AD8047004505A1 /* UIDevice+TJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E904A8F515AD8047004505A1 /* UIDevice+TJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E904A8F315AD8047004505A1 /* UIDevice+TJAdditions.m */; };
 		E908AC4915B95865003B0CE5 /* NSBundle+TJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E908AC4715B95865003B0CE5 /* NSBundle+TJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E908AC4A15B95865003B0CE5 /* NSBundle+TJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E908AC4815B95865003B0CE5 /* NSBundle+TJFoundation.m */; };
 		E908AC4E15B95943003B0CE5 /* UIImage+Bundle.h in Headers */ = {isa = PBXBuildFile; fileRef = E908AC4C15B95943003B0CE5 /* UIImage+Bundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -131,8 +131,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E904A8F215AD8047004505A1 /* UIDevice+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Additions.h"; sourceTree = "<group>"; };
-		E904A8F315AD8047004505A1 /* UIDevice+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Additions.m"; sourceTree = "<group>"; };
+		E904A8F215AD8047004505A1 /* UIDevice+TJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+TJAdditions.h"; sourceTree = "<group>"; };
+		E904A8F315AD8047004505A1 /* UIDevice+TJAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+TJAdditions.m"; sourceTree = "<group>"; };
 		E908AC4715B95865003B0CE5 /* NSBundle+TJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TJFoundation.h"; sourceTree = "<group>"; };
 		E908AC4815B95865003B0CE5 /* NSBundle+TJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TJFoundation.m"; sourceTree = "<group>"; };
 		E908AC4C15B95943003B0CE5 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
@@ -258,8 +258,8 @@
 		E904A8F015AD802A004505A1 /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
-				E904A8F215AD8047004505A1 /* UIDevice+Additions.h */,
-				E904A8F315AD8047004505A1 /* UIDevice+Additions.m */,
+				E904A8F215AD8047004505A1 /* UIDevice+TJAdditions.h */,
+				E904A8F315AD8047004505A1 /* UIDevice+TJAdditions.m */,
 			);
 			name = UIDevice;
 			sourceTree = "<group>";
@@ -625,7 +625,7 @@
 				E9E7B78615A0F9FF0043A242 /* NSDictionary+Additions.h in Headers */,
 				E9E7B78815A0F9FF0043A242 /* NSArray+Underscore.h in Headers */,
 				E945FFF515AC7EEF00A6E015 /* NSObject+Additions.h in Headers */,
-				E904A8F415AD8047004505A1 /* UIDevice+Additions.h in Headers */,
+				E904A8F415AD8047004505A1 /* UIDevice+TJAdditions.h in Headers */,
 				E9FA2A9A15AF4FAF00ABE286 /* NSObject+Subscripting.h in Headers */,
 				E9452F5A15B80642006655B1 /* UIView+Frame.h in Headers */,
 				E908AC4915B95865003B0CE5 /* NSBundle+TJFoundation.h in Headers */,
@@ -825,7 +825,7 @@
 				E960A43E180AF6C2006831B6 /* TJBlurNavigationBar.m in Sources */,
 				E9E7B78715A0F9FF0043A242 /* NSArray+Underscore.m in Sources */,
 				E945FFF615AC7EEF00A6E015 /* NSObject+Additions.m in Sources */,
-				E904A8F515AD8047004505A1 /* UIDevice+Additions.m in Sources */,
+				E904A8F515AD8047004505A1 /* UIDevice+TJAdditions.m in Sources */,
 				E9452F5B15B80642006655B1 /* UIView+Frame.m in Sources */,
 				E908AC4A15B95865003B0CE5 /* NSBundle+TJFoundation.m in Sources */,
 				E908AC4F15B95943003B0CE5 /* UIImage+Bundle.m in Sources */,
