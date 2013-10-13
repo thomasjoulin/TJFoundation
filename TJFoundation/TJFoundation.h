@@ -59,3 +59,4 @@
 #import <TJFoundation/UIWebView+Youtube.h>
 
 #import <TJFoundation/TJBlurNavigationBar.h>
+#import <TJFoundation/TJNibView.h>
