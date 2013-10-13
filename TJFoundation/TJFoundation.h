@@ -37,7 +37,7 @@
 #import <TJFoundation/UIColor+Additions.h>
 #import <TJFoundation/UIColor+ATColorExtension.h>
 
-#import <TJFoundation/UIDevice+Additions.h>
+#import <TJFoundation/UIDevice+TJAdditions.h>
 
 #import <TJFoundation/UIImage+Bundle.h>
 #import <TJFoundation/UIImage+Crop.h>
