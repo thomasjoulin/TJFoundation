@@ -60,6 +60,8 @@
 		E953E30416F9ACBC00B01D19 /* UIWebView+RemoveShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = E953E30216F9ACBC00B01D19 /* UIWebView+RemoveShadow.m */; };
 		E953E30716F9AD1600B01D19 /* UIWebView+Youtube.h in Headers */ = {isa = PBXBuildFile; fileRef = E953E30516F9AD1600B01D19 /* UIWebView+Youtube.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E953E30816F9AD1600B01D19 /* UIWebView+Youtube.m in Sources */ = {isa = PBXBuildFile; fileRef = E953E30616F9AD1600B01D19 /* UIWebView+Youtube.m */; };
+		E960A43D180AF6C2006831B6 /* TJBlurNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = E960A43B180AF6C2006831B6 /* TJBlurNavigationBar.h */; };
+		E960A43E180AF6C2006831B6 /* TJBlurNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E960A43C180AF6C2006831B6 /* TJBlurNavigationBar.m */; };
 		E96AB822160AC4DB0007B565 /* libTJFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC364615A0E1B700F40D63 /* libTJFoundation.a */; };
 		E96AB824160AC4E20007B565 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9FC365715A0E1B700F40D63 /* SenTestingKit.framework */; };
 		E96AB825160AC4E80007B565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E7B7C415A0FD110043A242 /* UIKit.framework */; };
@@ -163,6 +165,8 @@
 		E953E30216F9ACBC00B01D19 /* UIWebView+RemoveShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+RemoveShadow.m"; sourceTree = "<group>"; };
 		E953E30516F9AD1600B01D19 /* UIWebView+Youtube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Youtube.h"; sourceTree = "<group>"; };
 		E953E30616F9AD1600B01D19 /* UIWebView+Youtube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Youtube.m"; sourceTree = "<group>"; };
+		E960A43B180AF6C2006831B6 /* TJBlurNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBlurNavigationBar.h; sourceTree = "<group>"; };
+		E960A43C180AF6C2006831B6 /* TJBlurNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBlurNavigationBar.m; sourceTree = "<group>"; };
 		E987A63815BD9C3600985E83 /* NSString+PropertyKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PropertyKVC.h"; sourceTree = "<group>"; };
 		E987A63915BD9C3600985E83 /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyKVC.m"; sourceTree = "<group>"; };
 		E987A63B15BD9C3600985E83 /* UIAlertView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Additions.m"; sourceTree = "<group>"; };
@@ -356,11 +360,13 @@
 			name = UIWebView;
 			sourceTree = "<group>";
 		};
-		E96B05E115BC149400F67797 /* Vendors */ = {
+		E960A43A180AF688006831B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E960A43B180AF6C2006831B6 /* TJBlurNavigationBar.h */,
+				E960A43C180AF6C2006831B6 /* TJBlurNavigationBar.m */,
 			);
-			name = Vendors;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E97B402D15B9525B00ABB86A /* Resources */ = {
@@ -512,7 +518,7 @@
 			children = (
 				E9FC364E15A0E1B700F40D63 /* TJFoundation.h */,
 				E9E7B6FA15A0EA780043A242 /* Categories */,
-				E97B402D15B9525B00ABB86A /* Resources */,
+				E960A43A180AF688006831B6 /* Views */,
 				E9FA2A9815AF4F8B00ABE286 /* Others */,
 			);
 			name = Classes;
@@ -563,7 +569,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F6063C15A0E61500C5E9FF /* Classes */,
-				E96B05E115BC149400F67797 /* Vendors */,
+				E97B402D15B9525B00ABB86A /* Resources */,
 				E9FC364C15A0E1B700F40D63 /* Supporting Files */,
 			);
 			path = TJFoundation;
@@ -624,6 +630,7 @@
 				E9B7E2D0160AF2A00053E55C /* MKMapView+Regions.h in Headers */,
 				E911279E167ED62B001023AB /* NSArray+TJFoundation.h in Headers */,
 				E91127AA167EDA58001023AB /* NSNumber+TJFoundation.h in Headers */,
+				E960A43D180AF6C2006831B6 /* TJBlurNavigationBar.h in Headers */,
 				E91127AF167EDAE6001023AB /* UIView+Screenshot.h in Headers */,
 				E91127BA167EDB95001023AB /* UIImageView+TJFoundation.h in Headers */,
 				E91127BF167EDC00001023AB /* UIImage+Crop.h in Headers */,
@@ -808,6 +815,7 @@
 				E9E7B73B15A0F6BE0043A242 /* UIColor+Additions.m in Sources */,
 				E9E7B78115A0F9FF0043A242 /* UIColor+ATColorExtension.m in Sources */,
 				E9E7B78515A0F9FF0043A242 /* NSDictionary+Additions.m in Sources */,
+				E960A43E180AF6C2006831B6 /* TJBlurNavigationBar.m in Sources */,
 				E9E7B78715A0F9FF0043A242 /* NSArray+Underscore.m in Sources */,
 				E945FFF615AC7EEF00A6E015 /* NSObject+Additions.m in Sources */,
 				E904A8F515AD8047004505A1 /* UIDevice+Additions.m in Sources */,
