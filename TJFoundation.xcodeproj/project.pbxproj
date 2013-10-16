@@ -79,6 +79,8 @@
 		E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */; };
 		E9CAF27D171D473F0032894E /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CAF27B171D473E0032894E /* NSString+Hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9CAF27E171D473F0032894E /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CAF27C171D473E0032894E /* NSString+Hash.m */; };
+		E9CE4700180E6E8000476C32 /* UIViewController+TJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CE46FE180E6E8000476C32 /* UIViewController+TJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9CE4701180E6E8000476C32 /* UIViewController+TJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE46FF180E6E8000476C32 /* UIViewController+TJAdditions.m */; };
 		E9D0D54415A19D06007F9309 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D0D54315A19D06007F9309 /* ArrayTests.m */; };
 		E9E66EB915B953F7002D8B50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E66EB815B953F7002D8B50 /* CoreFoundation.framework */; };
 		E9E7B6F515A0E9100043A242 /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E7B6F115A0E9030043A242 /* StringTests.m */; };
@@ -185,6 +187,8 @@
 		E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Regions.m"; sourceTree = "<group>"; };
 		E9CAF27B171D473E0032894E /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		E9CAF27C171D473E0032894E /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		E9CE46FE180E6E8000476C32 /* UIViewController+TJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJAdditions.h"; sourceTree = "<group>"; };
+		E9CE46FF180E6E8000476C32 /* UIViewController+TJAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TJAdditions.m"; sourceTree = "<group>"; };
 		E9D0D54215A19D06007F9309 /* ArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTests.h; sourceTree = "<group>"; };
 		E9D0D54315A19D06007F9309 /* ArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTests.m; sourceTree = "<group>"; };
 		E9E66EB715B953F7002D8B50 /* TJFoundationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TJFoundationResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -388,6 +392,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		E9CE46FD180E6E5E00476C32 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9CE46FE180E6E8000476C32 /* UIViewController+TJAdditions.h */,
+				E9CE46FF180E6E8000476C32 /* UIViewController+TJAdditions.m */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
 		E9E66EBA15B953F7002D8B50 /* TJFoundationResources */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +436,7 @@
 				E9290D671717B22C00C90105 /* UILabel */,
 				E92205A3169FD28300BF8937 /* UIScreen */,
 				E9452F5D15B80648006655B1 /* UIView */,
+				E9CE46FD180E6E5E00476C32 /* UIViewController */,
 				E953E30016F9AC4C00B01D19 /* UIWebView */,
 			);
 			name = Categories;
@@ -649,6 +663,7 @@
 				E91127BF167EDC00001023AB /* UIImage+Crop.h in Headers */,
 				E960A445180AFF64006831B6 /* UIImage+TJAdditions.h in Headers */,
 				E91127C4167EDC50001023AB /* SKProduct+TJFoundation.h in Headers */,
+				E9CE4700180E6E8000476C32 /* UIViewController+TJAdditions.h in Headers */,
 				E98958EA168C098100FDDEEE /* UIImage+Resize.h in Headers */,
 				E92205A7169FD29C00BF8937 /* UIScreen+TJFoundation.h in Headers */,
 				E934053116B7959E009204DB /* NSUserDefaults+TJFoundation.h in Headers */,
@@ -852,6 +867,7 @@
 				E934053216B7959E009204DB /* NSUserDefaults+TJFoundation.m in Sources */,
 				E949700116D7267A00D71B72 /* UIImage+Device.m in Sources */,
 				E953E30416F9ACBC00B01D19 /* UIWebView+RemoveShadow.m in Sources */,
+				E9CE4701180E6E8000476C32 /* UIViewController+TJAdditions.m in Sources */,
 				E953E30816F9AD1600B01D19 /* UIWebView+Youtube.m in Sources */,
 				E9290D6B1717B24A00C90105 /* UILabel+Sizing.m in Sources */,
 				E9CAF27E171D473F0032894E /* NSString+Hash.m in Sources */,

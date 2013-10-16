@@ -54,6 +54,8 @@
 #import <TJFoundation/UIView+Screenshot.h>
 #import <TJFoundation/UIView+Frame.h>
 
+#import <TJFoundation/UIViewController+TJAdditions.h>
+
 #import <TJFoundation/SKProduct+TJFoundation.h>
 
 #import <TJFoundation/UIWebView+RemoveShadow.h>
