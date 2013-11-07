@@ -77,6 +77,8 @@
 		E98958EB168C098100FDDEEE /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E98958E9168C098100FDDEEE /* UIImage+Resize.m */; };
 		E9B7E2D0160AF2A00053E55C /* MKMapView+Regions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */; };
+		E9C0D7C0182B5698001CEDAF /* UISearchBar+TJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C0D7BE182B5698001CEDAF /* UISearchBar+TJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C0D7C1182B5698001CEDAF /* UISearchBar+TJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0D7BF182B5698001CEDAF /* UISearchBar+TJAdditions.m */; };
 		E9CAF27D171D473F0032894E /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CAF27B171D473E0032894E /* NSString+Hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9CAF27E171D473F0032894E /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CAF27C171D473E0032894E /* NSString+Hash.m */; };
 		E9CE4700180E6E8000476C32 /* UIViewController+TJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CE46FE180E6E8000476C32 /* UIViewController+TJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -185,6 +187,8 @@
 		E98958E9168C098100FDDEEE /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		E9B7E2CE160AF29F0053E55C /* MKMapView+Regions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Regions.h"; sourceTree = "<group>"; };
 		E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Regions.m"; sourceTree = "<group>"; };
+		E9C0D7BE182B5698001CEDAF /* UISearchBar+TJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+TJAdditions.h"; sourceTree = "<group>"; };
+		E9C0D7BF182B5698001CEDAF /* UISearchBar+TJAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+TJAdditions.m"; sourceTree = "<group>"; };
 		E9CAF27B171D473E0032894E /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		E9CAF27C171D473E0032894E /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		E9CE46FE180E6E8000476C32 /* UIViewController+TJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJAdditions.h"; sourceTree = "<group>"; };
@@ -392,6 +396,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		E9C0D7BC182B5674001CEDAF /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0D7BE182B5698001CEDAF /* UISearchBar+TJAdditions.h */,
+				E9C0D7BF182B5698001CEDAF /* UISearchBar+TJAdditions.m */,
+			);
+			name = UISearchBar;
+			sourceTree = "<group>";
+		};
 		E9CE46FD180E6E5E00476C32 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +448,7 @@
 				E91127B1167EDB18001023AB /* UIImageView */,
 				E9290D671717B22C00C90105 /* UILabel */,
 				E92205A3169FD28300BF8937 /* UIScreen */,
+				E9C0D7BC182B5674001CEDAF /* UISearchBar */,
 				E9452F5D15B80648006655B1 /* UIView */,
 				E9CE46FD180E6E5E00476C32 /* UIViewController */,
 				E953E30016F9AC4C00B01D19 /* UIWebView */,
@@ -666,6 +680,7 @@
 				E9CE4700180E6E8000476C32 /* UIViewController+TJAdditions.h in Headers */,
 				E98958EA168C098100FDDEEE /* UIImage+Resize.h in Headers */,
 				E92205A7169FD29C00BF8937 /* UIScreen+TJFoundation.h in Headers */,
+				E9C0D7C0182B5698001CEDAF /* UISearchBar+TJAdditions.h in Headers */,
 				E934053116B7959E009204DB /* NSUserDefaults+TJFoundation.h in Headers */,
 				E949700016D7267A00D71B72 /* UIImage+Device.h in Headers */,
 				E953E30316F9ACBC00B01D19 /* UIWebView+RemoveShadow.h in Headers */,
@@ -865,6 +880,7 @@
 				E98958EB168C098100FDDEEE /* UIImage+Resize.m in Sources */,
 				E92205A8169FD29C00BF8937 /* UIScreen+TJFoundation.m in Sources */,
 				E934053216B7959E009204DB /* NSUserDefaults+TJFoundation.m in Sources */,
+				E9C0D7C1182B5698001CEDAF /* UISearchBar+TJAdditions.m in Sources */,
 				E949700116D7267A00D71B72 /* UIImage+Device.m in Sources */,
 				E953E30416F9ACBC00B01D19 /* UIWebView+RemoveShadow.m in Sources */,
 				E9CE4701180E6E8000476C32 /* UIViewController+TJAdditions.m in Sources */,
