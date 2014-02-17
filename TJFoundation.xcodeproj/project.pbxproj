@@ -79,7 +79,7 @@
 		E9B7E2D1160AF2A00053E55C /* MKMapView+Regions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7E2CF160AF29F0053E55C /* MKMapView+Regions.m */; };
 		E9C0D7C0182B5698001CEDAF /* UISearchBar+TJAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C0D7BE182B5698001CEDAF /* UISearchBar+TJAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9C0D7C1182B5698001CEDAF /* UISearchBar+TJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0D7BF182B5698001CEDAF /* UISearchBar+TJAdditions.m */; };
-		E9C352CE18B1DAE300948E2D /* TJBorderedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C352CC18B1DAE300948E2D /* TJBorderedButton.h */; };
+		E9C352CE18B1DAE300948E2D /* TJBorderedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C352CC18B1DAE300948E2D /* TJBorderedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9C352CF18B1DAE300948E2D /* TJBorderedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C352CD18B1DAE300948E2D /* TJBorderedButton.m */; };
 		E9CAF27D171D473F0032894E /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = E9CAF27B171D473E0032894E /* NSString+Hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9CAF27E171D473F0032894E /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CAF27C171D473E0032894E /* NSString+Hash.m */; };
