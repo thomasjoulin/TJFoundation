@@ -41,6 +41,5 @@ typedef BOOL (^ TJFindBlock)(id obj);
 - (NSDictionary *)groupBy:(NSString *)keyPath;
 - (NSDictionary *)groupUsingBlock:(id (^)(id obj))context;
 - (NSArray *)shuffle;
-- (id)firstObject;
 
 @end

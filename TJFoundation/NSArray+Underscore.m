@@ -219,11 +219,6 @@
     return ret;
 }
 
-- (id)firstObject
-{
-    return [self objectAtIndex:0];
-}
-
 - (NSArray *)zip:(NSArray *)firstArray, ...
 {
     va_list args;
