@@ -20,4 +20,14 @@
     return NO;
 }
 
+- (CGSize)tj_realScreenSize
+{
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(traitCollection)])
+    {
+        return self.bounds.size;
+    }
+
+    return CGSizeMake(CGRectGetHeight(self.bounds), CGRectGetWidth(self.bounds));
+}
+
 @end

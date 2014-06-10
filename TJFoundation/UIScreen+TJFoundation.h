@@ -9,5 +9,6 @@
 @interface UIScreen (TJFoundation)
 
 - (BOOL)hasRetinaDisplay;
+- (CGSize)tj_realScreenSize;
 
 @end
